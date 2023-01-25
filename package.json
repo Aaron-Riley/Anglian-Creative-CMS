@@ -1,6 +1,15 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "grunt-cli": "^1.4.3",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "node-sass": "^8.0.0",
     "sass": "^1.57.1"
   }
 }

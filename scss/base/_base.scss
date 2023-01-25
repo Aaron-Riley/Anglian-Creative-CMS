@@ -8,6 +8,11 @@ html, body {
 }
 
 .btn-primary {
-	background-color: #000;
+	background-color: #000 !important;
+	border-color: #000;
+}
+
+.btn-custom {
+	background-color: #000 !important;
 	border-color: #000;
 }
