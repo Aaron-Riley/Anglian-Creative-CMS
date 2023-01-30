@@ -1,0 +1,30 @@
+.content{
+width: 100%;
+height: 100%;
+border: red solid 1px;
+min-height: calc(100vh - 81px);
+padding: 15px;
+h1{
+    font-size: 20px;
+    svg{
+        fill: #ffffff;
+    }
+}
+.card{
+    background-color: #888888;
+    padding: .5rem;
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    svg{
+        fill: #ffffff;
+        height: 40px;
+        width: 40px;
+    }
+}
+}
