@@ -11,11 +11,16 @@ h1{
     }
 }
 #card-1{
-    background-color: #B80000;
+    background-color: #8B0000;
     padding: 2rem;
     h2{
         font-size: 25px;
         font-weight: 600;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 400;
+        color: #a1a1a1;
     }
     p{
         font-size: 40px;
@@ -69,4 +74,75 @@ h1{
         width: 40px;
     }
 }
+#card-pie{
+    background-color: #7D0092;
+    padding: 2rem;
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+#card-projects{
+    background-color: #8B0000;
+    padding: 1.5rem;
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 700;
+        color: #a1a1a1;
+    }
+    td{
+        font-weight: 500;
+        color: #a1a1a1;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #a1a1a1;
+        position: relative;
+        padding-left: 40px;
+    }
+    svg{
+        fill: #ffffff;
+        height: 40px;
+        width: 40px;
+        padding-right: 10px;
+    }
+}
+
+#card-blog{
+    background-color: #002D4D;
+    padding: 2rem;
+    border-color: #7D0092;
+    img{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        }
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    svg{
+        fill: #ffffff;
+        height: 40px;
+        width: 40px;
+        padding-right: 20px;
+    }
+}
+
 }
