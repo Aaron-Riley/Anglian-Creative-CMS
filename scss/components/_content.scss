@@ -99,6 +99,10 @@ h1{
         font-weight: 700;
         color: #a1a1a1;
     }
+    th{
+        font-weight: 600;
+        font-size: 20px;
+    }
     td{
         font-weight: 500;
         color: #a1a1a1;
@@ -122,12 +126,18 @@ h1{
 #card-blog{
     background-color: #002D4D;
     padding: 2rem;
-    border-color: #7D0092;
+    table th, td{
+        border-color: #9f9f9f;
+        border-top: none;
+        color: #9f9f9f !important;
+
+    }
     img{
         border-radius: 100%;
         width: 30px;
         height: 30px;
         object-fit: cover;
+        margin: .5rem;
         }
     h2{
         font-size: 25px;
@@ -143,6 +153,89 @@ h1{
         width: 40px;
         padding-right: 20px;
     }
+    svg.bin{
+        fill: #ad0101;
+    }
 }
 
+#card-notifications{
+    background-color: #7D0092;
+    padding: 1.5rem;
+    img{
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        margin: .5rem;
+        }
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        color: #a1a1a1;
+    }
+    th{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    td{
+        font-weight: 300;
+        color: #a1a1a1;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #a1a1a1;
+        position: relative;
+        padding-left: 40px;
+    }
+    svg{
+        fill: #ffffff;
+        height: 40px;
+        width: 40px;
+        padding-right: 10px;
+    }
+}
+
+#card-post{
+    background-color: #002D4D;
+    padding: 2rem;
+    table th, td{
+        border-color: #9f9f9f;
+        border-top: none;
+        color: #9f9f9f !important;
+
+    }
+    img{
+        height: 29vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4%;
+        }
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    svg{
+        fill: #ffffff;
+        height: 40px;
+        width: 40px;
+        padding-right: 20px;
+    }
+    svg.bin{
+        fill: #ad0101;
+    }
+}
 }
