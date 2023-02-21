@@ -8,4 +8,3 @@ $smarty->setTemplateDir(__DIR__.'/../views')
 ->setCacheDir(__DIR__.'/../smarty/cache')
 ->setConfigDir(__DIR__.'/../smarty/configs');
 
-echo $smarty->testInstall();

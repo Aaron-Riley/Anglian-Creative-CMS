@@ -1,3 +1,29 @@
+<?php
+/* Smarty version 4.3.0, created on 2023-02-21 11:18:38
+  from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_63f4a88e8d6fe9_50697721',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '5be134a23c6226fad531abc2982741c97a4abbdc' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
+      1 => 1676978295,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63f4a88e8d6fe9_50697721 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, false);
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,17 +46,18 @@
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-<?php echo $_smarty_tpl->tpl_vars['view_name']->value;?>
+">
     <div>
-      <nav class="navbar navbar-expand-md" aria-label="Fourth navbar example">
+      <nav class="navbar navbar-expand-md">
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form role="search" class="custom-form">
-              <div class="form-group" ng-class="{'not-empty': userName.length}">
+              <div class="form-group">
                 <input
                   type="text"
                   class="form-control"
@@ -67,9 +94,6 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item text-dark" href="#">Settings</a>
-                  </li>
-                  <li>
                     <a class="dropdown-item text-dark" href="#">Sign Out</a>
                   </li>
                 </ul>
@@ -89,8 +113,8 @@
         </div>
       </nav>
       <div class="inner-wrapper d-flex">
-        <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3">
-          <a href="/" class="d-flex align-items-center text-decoration-none">
+        <div id="sidebar" class="d-flex flex-column flex-md-shrink-0 flex-sm-column p-3">
+          <a href="index.php?p=home" class="d-flex align-items-center text-decoration-none">
             <img
               id="logo"
               src="./images/logo.svg"
@@ -124,7 +148,7 @@
             </li>
             <li class="nav-item">
               <a
-                href="index.html"
+                href="index.php?p=home"
                 class="nav-link link-light d-flex align-center justify-content-between mb-3"
                 >Dashboard<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +164,7 @@
             </li>
             <li>
               <a
-                href="./blog.html"
+                href="index.php?p=blog"
                 class="nav-link link-light d-flex align-center justify-content-between mb-3"
                 >Blog<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +180,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="index.php?p=projects"
                 class="nav-link link-light d-flex align-center justify-content-between mb-3"
                 >Projects<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -172,23 +196,7 @@
             </li>
             <li>
               <a
-                href="#"
-                class="nav-link link-light d-flex align-center justify-content-between mb-3"
-                >Analytics<svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
+                href="index.php?p=user"
                 class="nav-link link-light d-flex align-center justify-content-between mb-3"
                 >Users<svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,52 +213,39 @@
           </ul>
           <hr />
         </div>
-        <div class="content">
-            
-            <div class="d-flex justify-content-start">
-                <h1 class="d-flex align-items-center mt-3">
-                        <a href="./projects.html" class="text-decoration-none text-white">
-                        <svg class="mr-3"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
-                        Project
-                    </a>
-                    </h1>
-                    <h1 class="d-flex align-items-center mt-3 mx-3">
-                        -
-                    </h1>
-                    <h1 class="d-flex align-items-center mt-3">
-                        <a href="#" class="text-decoration-none text-white">Add New Project</a>
-                    </h1>
-                </div>
-                <div class="container">
-                    <h3 class="mt-5 d-flex align-items-center">Title</h3>
-                    <input type="text" class="form-control d-flex align-items-center" placeholder="Title">
-                    <h3 class="mt-5 d-flex align-items-center">Content</h3>
-                    <div id="editor">
-                        <p>This is some sample content.</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
-                    <input type="file" class="form-control d-flex align-items-center" placeholder="Title">
-                <div class="d-flex justify-content-start">
-                        <button type="button" class="btn btn-primary mt-5">Submit</button>
-                </div>
-                <script>
-                    ClassicEditor
-                        .create( document.querySelector( '#editor' ) )
-                        .catch( error => {
-                            console.error( error );
-                        } );
-                </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_158793299163f4a88e8d67f9_53968602', "body");
+?>
+
+
+<?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+><?php echo '</script'; ?>
+>
+</body>
 </html>
+<?php }
+/* {block "body"} */
+class Block_158793299163f4a88e8d67f9_53968602 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'body' => 
+  array (
+    0 => 'Block_158793299163f4a88e8d67f9_53968602',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+
+<?php
+}
+}
+/* {/block "body"} */
+}
