@@ -25,5 +25,28 @@
         <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
         <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
     </div>
+    <form action="" method="post" class="form-light" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label for="user_name">Change name</label>
+            <input type="text" class="form-control" id="user_name" value="Aaron" name="user_name">
+        </div>
+        <div class="form-group mb-3">
+        <label for="user_name">Change role</label>
+        <input type="text" class="form-control" id="user_name" value="Global Administrator" name="user_role">
+    </div>
+        <div class="form-group">
+            <label for="user_profile">Change profile picture</label>
+            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="user_profile">
+        </div>
+        <div class="form-group mb-3">
+        <label for="user_name">Change company name</label>
+        <input type="text" class="form-control" id="user_name" value="Anglian Creative" name="user_company">
+    </div>
+        <div class="form-group">
+            <label for="user_profile">Change company picture</label>
+            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="user_profile">
+        </div>
+        <button type="submit" class="btn btn-primary mt-3 mb-5">Change details</button>
+    </form>
   </div>
 {/block}

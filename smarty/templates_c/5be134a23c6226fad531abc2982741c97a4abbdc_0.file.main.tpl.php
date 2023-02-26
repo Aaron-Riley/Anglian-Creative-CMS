@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-21 11:18:38
+/* Smarty version 4.3.0, created on 2023-02-26 15:47:01
   from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63f4a88e8d6fe9_50697721',
+  'unifunc' => 'content_63fb7ef59acbf5_19000109',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5be134a23c6226fad531abc2982741c97a4abbdc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
-      1 => 1676978295,
+      1 => 1677426418,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63f4a88e8d6fe9_50697721 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63fb7ef59acbf5_19000109 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,7 +30,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CMS</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -89,12 +89,12 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 >
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item text-dark border-bottom" href="#"
+                    <a class="dropdown-item text-dark border-bottom" href="index.php?p=profile"
                       >Profile</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item text-dark" href="#">Sign Out</a>
+                    <a class="dropdown-item text-dark" href="index.php?p=login">Sign Out</a>
                   </li>
                 </ul>
               </li>
@@ -127,7 +127,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
               <a
-                href="#"
+                href="index.php?p=profile"
                 class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
                 id="dropdownUser2"
                 data-bs-toggle="dropdown"
@@ -214,7 +214,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
           <hr />
         </div>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_158793299163f4a88e8d67f9_53968602', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_35145587263fb7ef59a97c8_81939553', "body");
 ?>
 
 
@@ -232,12 +232,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_158793299163f4a88e
 </html>
 <?php }
 /* {block "body"} */
-class Block_158793299163f4a88e8d67f9_53968602 extends Smarty_Internal_Block
+class Block_35145587263fb7ef59a97c8_81939553 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_158793299163f4a88e8d67f9_53968602',
+    0 => 'Block_35145587263fb7ef59a97c8_81939553',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CMS</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -62,12 +62,12 @@
                 >
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item text-dark border-bottom" href="#"
+                    <a class="dropdown-item text-dark border-bottom" href="index.php?p=profile"
                       >Profile</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item text-dark" href="#">Sign Out</a>
+                    <a class="dropdown-item text-dark" href="index.php?p=login">Sign Out</a>
                   </li>
                 </ul>
               </li>
@@ -100,7 +100,7 @@
           <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
               <a
-                href="#"
+                href="index.php?p=profile"
                 class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
                 id="dropdownUser2"
                 data-bs-toggle="dropdown"

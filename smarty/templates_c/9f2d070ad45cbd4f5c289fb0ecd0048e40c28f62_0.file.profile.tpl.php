@@ -1,5 +1,46 @@
-{extends file="layouts/main.tpl"}
-{block name="body"}
+<?php
+/* Smarty version 4.3.0, created on 2023-02-26 15:37:57
+  from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.3.0',
+  'unifunc' => 'content_63fb7cd58b16b2_16349902',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
+    array (
+      0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
+      1 => 1677425874,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63fb7cd58b16b2_16349902 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_loadInheritance();
+$_smarty_tpl->inheritance->init($_smarty_tpl, true);
+?>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_139428982863fb7cd58aed25_82953071', "body");
+$_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
+}
+/* {block "body"} */
+class Block_139428982863fb7cd58aed25_82953071 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'body' => 
+  array (
+    0 => 'Block_139428982863fb7cd58aed25_82953071',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
     <div class="content">
     <div class="container">
     <div class="d-flex justify-content-start">
@@ -26,4 +67,8 @@
         <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
     </div>
   </div>
-{/block}
+<?php
+}
+}
+/* {/block "body"} */
+}
