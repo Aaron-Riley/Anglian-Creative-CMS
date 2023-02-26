@@ -1,7 +1,7 @@
 <?php
 
 try{
-    $Conn = new PDO("mysql::host=".DB_HOST.";port=8889;dbname=".DB_NAME, DB_USER, DB_PASS);
+    $Conn = new PDO("mysql::host=".DB_HOST.";port=".DB_PORT.";dbname=".DB_NAME, DB_USER, DB_PASS);
     $Conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     $Conn->setAttribute(PDO::ATTR_PERSISTENT, true);
     $Conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

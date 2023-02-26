@@ -2,5 +2,8 @@
     "require": {
         "smarty/smarty": "^4.3",
         "aws/aws-sdk-php": "^3.260"
+    },
+    "config": {
+        "platform-check": false
     }
 }
