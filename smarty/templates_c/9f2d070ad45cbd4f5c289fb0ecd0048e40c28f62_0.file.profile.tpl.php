@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-26 15:37:57
+/* Smarty version 4.3.0, created on 2023-02-27 10:38:49
   from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63fb7cd58b16b2_16349902',
+  'unifunc' => 'content_63fc88399ed1b1_45235798',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
-      1 => 1677425874,
+      1 => 1677494327,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63fb7cd58b16b2_16349902 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63fc88399ed1b1_45235798 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_139428982863fb7cd58aed25_82953071', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6414550863fc88399eb156_19756408', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_139428982863fb7cd58aed25_82953071 extends Smarty_Internal_Block
+class Block_6414550863fc88399eb156_19756408 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_139428982863fb7cd58aed25_82953071',
+    0 => 'Block_6414550863fc88399eb156_19756408',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,15 +52,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </h1>
     </div>
 
-    <div class="row mt-3 mb-5">
+    <div id="profile" class="row mt-3 mb-5">
     <div class="col-lg-6">
       <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
-      <h3>Username</h3>
-      <p>Role</p>
+      <h3>Patrick Spector</h3>
+      <p>Global Administrator</p>
       </div>
     <div class="col-lg-6">
-    <img src="/images/logo.svg" class="mb-3" alt="Responsive image">
-    <h3>Company Name</h3>
+    <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
+    <h3>Anglian Creative</h3>
     </div>
     <div class="container">
         <a href="index.php?p=password" class="btn btn-primary">Change Password</a>

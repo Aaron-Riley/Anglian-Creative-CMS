@@ -11,19 +11,20 @@
         </h1>
     </div>
 
-    <div class="row mt-3 mb-5">
+    <div id="profile" class="row mt-3 mb-5">
     <div class="col-lg-6">
       <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
-      <h3>Username</h3>
-      <p>Role</p>
-      </div>
+      <h3>Patrick Spector</h3>
+      <p>Global Administrator</p>
+    </div>
     <div class="col-lg-6">
-    <img src="/images/logo.svg" class="mb-3" alt="Responsive image">
-    <h3>Company Name</h3>
+      <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
+      <h3>Anglian Creative</h3>
     </div>
     <div class="container">
-        <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
-        <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+    <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+    <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+    </div>
     </div>
     <form action="" method="post" class="form-light" enctype="multipart/form-data">
         <div class="form-group mb-3">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-26 15:42:34
+/* Smarty version 4.3.0, created on 2023-02-27 10:42:37
   from 'C:\MAMP\htdocs\agcms\views\pages\editprofile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63fb7deae2a5b7_05689038',
+  'unifunc' => 'content_63fc891d90c628_70099112',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0b7a102f4c3f877aef46d6fcd3f2e19874461fc2' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprofile.tpl',
-      1 => 1677426152,
+      1 => 1677494555,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63fb7deae2a5b7_05689038 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63fc891d90c628_70099112 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_36206445163fb7deae27dd4_22070278', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8990897863fc891d90b3f7_71592336', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_36206445163fb7deae27dd4_22070278 extends Smarty_Internal_Block
+class Block_8990897863fc891d90b3f7_71592336 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_36206445163fb7deae27dd4_22070278',
+    0 => 'Block_8990897863fc891d90b3f7_71592336',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,19 +52,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </h1>
     </div>
 
-    <div class="row mt-3 mb-5">
+    <div id="profile" class="row mt-3 mb-5">
     <div class="col-lg-6">
       <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
-      <h3>Username</h3>
-      <p>Role</p>
-      </div>
+      <h3>Patrick Spector</h3>
+      <p>Global Administrator</p>
+    </div>
     <div class="col-lg-6">
-    <img src="/images/logo.svg" class="mb-3" alt="Responsive image">
-    <h3>Company Name</h3>
+      <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
+      <h3>Anglian Creative</h3>
     </div>
     <div class="container">
-        <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
-        <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+    <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+    <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+    </div>
     </div>
     <form action="" method="post" class="form-light" enctype="multipart/form-data">
         <div class="form-group mb-3">
