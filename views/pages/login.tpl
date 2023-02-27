@@ -8,18 +8,18 @@
             <div class="alert alert-danger" role="alert">
                 {$error}
             </div>
-        {/if}
+        {/if} 
         
-        <form>
+        <form action="" method="post">
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="email" name="email" id="email">
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required="">
+            <input type="password" name="password" id="password">
             <label>Password</label>
           </div>
-          <a name="login" value="1" href="index.php?p=home">
+          <a type="submit" name="login" value="1">
             <span></span>
             <span></span>
             <span></span>

@@ -7,14 +7,14 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 if(isset($_GET['p'])) {
     //Add profile to secure pages once design is complete
-    // $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user');
+    $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user');
 
-    // if(in_array($_GET['p'], $secure_pages)) {
-    //     if(!($_SESSION['is_loggedin'])) {
-    //         header('Location: index.php?p=login');
-    //         exit;
-    //     }
-    // }
+    if(in_array($_GET['p'], $secure_pages)) {
+        if(!($_SESSION['is_loggedin'])) {
+            header('Location: index.php?p=login');
+            exit;
+        }
+    }
     
     $smarty->assign('view_name', $_GET['p']);
     require_once('controllers/'.$_GET['p'].'.php');

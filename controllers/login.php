@@ -1,5 +1,7 @@
 <?php
-if ($_POST['login']) {
+if ($_POST) {
+
+    if ($_POST['login']) {
         if (!$_POST['email']) {
             $error = "Email not set";
         } else if (!$_POST['password']) {
@@ -28,4 +30,4 @@ if ($_POST['login']) {
             }
         }
     }
-
+}
