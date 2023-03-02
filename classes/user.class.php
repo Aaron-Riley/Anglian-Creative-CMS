@@ -7,14 +7,23 @@ class User {
         $this->Conn = $Conn;
     }
 
+//     public function createuser(){
+//         $password = password_hash("Password123!", PASSWORD_DEFAULT);
+//         $sql = "INSERT INTO users (user_email, user_name, user_role, user_pass) VALUES (?, ?, ?, ?)";
+//         $stmt = $this->Conn->prepare($sql);
+//         $stmt->execute([
+// 's215097@uos.ac.uk', 'Patrick', 'Global Administrator' , $password
+//         ]);
+//     }
+
     public function loginUser($email, $password){
+
         $query = "SELECT * FROM users WHERE user_email = :user_email";
         $stmt = $this->Conn->prepare($query);
         $stmt->execute(array(
             "user_email" => $email
         ));
         $attempt = $stmt->fetch();
-
         if($attempt && password_verify($password, $attempt['user_pass'])) {
             return $attempt;
         }else{

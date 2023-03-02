@@ -19,13 +19,13 @@
             <input type="password" name="password" id="password">
             <label>Password</label>
           </div>
-          <a type="submit" name="login" value="1">
+          <button type="submit" name="login" value="1">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Login
-          </a>
+          </button>
         </form>
       </div>
 

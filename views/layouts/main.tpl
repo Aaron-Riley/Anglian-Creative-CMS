@@ -183,6 +183,13 @@
                 </svg>
               </a>
             </li>
+          
+          
+             {* {if $_SESSION['user_data']['user_role'] === 'Power User'}
+              <li>
+              MANAGEMENT
+              </li>
+             {/if} *}
           </ul>
           <hr />
         </div>

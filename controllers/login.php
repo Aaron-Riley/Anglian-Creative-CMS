@@ -6,19 +6,20 @@ if ($_POST) {
             $error = "Email not set";
         } else if (!$_POST['password']) {
             $error = "Password not set";
-        } else if (strlen($_POST['password']) < 8) {
-            $error = "Password must be at least 8 characters in length";
         } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $error = "Email is not vaild";
         }
 
 
-        if ($error) {
+        if (isset($error)) {
             $smarty->assign('error', $error);
         } else {
             $User = new User($Conn);
-            $user_data = $User->loginUser($_POST['email'], $_POST['password']);
 
+        
+
+            $user_data = $User->loginUser($_POST['email'], $_POST['password']);
+            var_dump($user_data);
             if ($user_data) {
                 echo "in";
                 $_SESSION['is_loggedin'] = true;

@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL & ~E_NOTICE);
 
+
 if(isset($_GET['p'])) {
     //Add profile to secure pages once design is complete
     $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user');
@@ -21,6 +22,6 @@ if(isset($_GET['p'])) {
     $smarty->display('pages/'.$_GET['p'].'.tpl');
 }else{
     $smarty->assign('view_name', 'home');
-    require_once('controllers/home.php');
-    $smarty->display('pages/home.tpl');   
+    require_once('controllers/login.php');
+    $smarty->display('pages/login.tpl');   
 }
