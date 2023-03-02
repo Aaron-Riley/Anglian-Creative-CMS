@@ -21,11 +21,11 @@ if (isset($_POST['submitBlog'])) {
             $imageUrl = putObject($image_tmp, $image);
 
 
-            $sql = "INSERT INTO blog (title, content, author, image_url) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO blog (title, content, user_name, image_url) VALUES (?, ?, ?, ?)";
             $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, 'aaron', $imageUrl]);
+            $stmt->execute([$title, $content, $_SESSION, $imageUrl]);
 
-            header('Location: /blog');
+            header('Location: index.php?p=blog');
         } else {
             print_r($errors);
         }

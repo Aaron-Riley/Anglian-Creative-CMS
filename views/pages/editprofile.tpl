@@ -41,7 +41,7 @@
         </div>
         <div class="form-group mb-3">
         <label for="user_name">Change company name</label>
-        <input type="text" class="form-control" id="user_name" value="Anglian Creative" name="user_company">
+        <input type="text" class="form-control" id="user_company" value="Anglian Creative" name="user_company">
     </div>
         <div class="form-group">
             <label for="user_profile">Change company picture</label>

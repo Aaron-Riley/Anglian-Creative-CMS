@@ -18,7 +18,7 @@
   <div class="row mt-5 mb-5">
     <div class="col-lg-12">
       <div id="card-blog" class="card">
-        <h2 class="d-flex align-items-center justify-content-between mx-3">Blogs</h2>
+        <h2 class="d-flex align-items-center justify-content-between mx-3">Users</h2>
         <table class="table">
           <thead class="thead">
             <tr>

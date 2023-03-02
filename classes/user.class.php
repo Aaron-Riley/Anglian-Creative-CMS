@@ -7,6 +7,18 @@ class User {
         $this->Conn = $Conn;
     }
 
+
+    public function createUser($user_data) {
+        $sec_password = password_hash($user_data['password'], PASSWORD_DEFAULT);
+        $query = "INSERT INTO users (user_email, user_pass, user_role, user_name) VALUES (?, ?, ?, ?)";
+        $stmt = $this->Conn->prepare($query);
+
+        return $stmt->execute(array(
+            "user_email" => $user_data['email'],
+            "user_pass" => $sec_password
+        ));
+    }
+
 //     public function createuser(){
 //         $password = password_hash("Password123!", PASSWORD_DEFAULT);
 //         $sql = "INSERT INTO users (user_email, user_name, user_role, user_pass) VALUES (?, ?, ?, ?)";

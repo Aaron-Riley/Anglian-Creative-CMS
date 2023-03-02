@@ -8,7 +8,7 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 if(isset($_GET['p'])) {
     //Add profile to secure pages once design is complete
-    $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user');
+    $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user', 'editprofile', 'profile');
 
     if(in_array($_GET['p'], $secure_pages)) {
         if(!($_SESSION['is_loggedin'])) {

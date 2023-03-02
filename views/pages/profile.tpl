@@ -26,7 +26,7 @@
           <h3>Anglian Creative</h3>
         </div>
         <div class="container">
-          <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+          <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
           <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
         </div>
       </div>

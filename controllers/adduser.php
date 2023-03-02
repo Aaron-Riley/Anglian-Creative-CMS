@@ -1,36 +1,34 @@
 <?php
 
-// This needs editing to work with adding and editing users
-
-if (isset($_POST['submitBlog'])) {
-    try {
-        $title = $_POST['title'];
-        $content = null;
-        $image = $_FILES['image']['name'];
-
-        // Image Upload and Validation 
-        $image_tmp = $_FILES['image']['tmp_name'];
-        $image_size = $_FILES['image']['size'];
-        $image_type = $_FILES['image']['type'];
-        $image_ext = strtolower(end(explode('.', $image)));
-        $extensions = array("jpeg", "jpg", "png");
-        if (in_array($image_ext, $extensions) === false)  $errors[] = "This extension file is not allowed, please choose a JPEG or PNG file.";
-        if ($image_size > 2097152) $errors[] = "File size must be excately 2 MB";
-
-
-        if (empty($errors) == true) {
-            $imageUrl = putObject($image_tmp, $image);
-
-
-            $sql = "INSERT INTO blog (title, content, author, image_url) VALUES (?, ?, ?, ?)";
-            $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, 'aaron', $imageUrl]);
-
-            header('Location: /blog');
-        } else {
-            print_r($errors);
+if ($_POST){
+    if ($_POST['addUser']) {
+    } else if (!$_POST['name']) {
+            $error = "Name not set";
+        if (!$_POST['email']) {
+            $error = "Email not set";
+        } else if (!$_POST['password']) {
+            $error = "Password not set"; 
+        } else if (!$_POST['password_confirm']) {
+            $error = "Confirmed password not set";
+        } else if ($_POST['password'] != $_POST['password_confirm']) {
+            $error = "Password and confirm password must match";
+        } else if (strlen($_POST['password']) < 8) {
+            $error = "Password must be at least 8 characters in length";
+        } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $error = "Email is not vaild";
         }
-    } catch (Exception $e) {
-        echo 'Caught exception: ', $e->getMessage();
+        
+        if ($error) {
+            $smarty->assign('error', $error);
+        } else {
+            $User = new User($Conn);
+            $attempt = $User->createUser($_POST);
+            
+            if ($attempt) {
+                $smarty->assign('success', 'Your account has been created. Please now login');
+            } else {
+                $smarty->assign('error', 'An error has occured, Please try again later. ');
+            }
+        }
     }
-}
+    }

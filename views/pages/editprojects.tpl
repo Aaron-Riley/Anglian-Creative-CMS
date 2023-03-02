@@ -26,9 +26,10 @@
                 <a href="#" class="text-decoration-none text-white">Edit Project</a>
             </h1>
         </div>
+        <form method="POST" enctype="multipart/form-data">
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Title</h3>
-            <input type="text" class="form-control d-flex align-items-center" placeholder="Title">
+            <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
             <h3 class="mt-5 d-flex align-items-center">Content</h3>
             <div id="editor">
                 <p>This is some sample content.</p>
@@ -36,11 +37,13 @@
         </div>
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
-            <input type="file" class="form-control d-flex align-items-center" placeholder="Title">
-        <div class="d-flex justify-content-start">
-            <button type="button" class="btn btn-primary mt-5 px-3 mr-3">Submit</button>
-            <button type="button" class="btn btn-secondary mt-5 px-3">Delete</button>
+            <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Title">
+            <div class="d-flex justify-content-start">
+                <button type="submit" class="btn btn-primary mt-5 px-3 mr-2" name="changeProject">Submit</button>
+                <button type="submit" class="btn btn-secondary mt-5 px-3" name="deleteProject">Delete</button>
+            </div>
         </div>
+    </form>
         <script>
             ClassicEditor
                 .create( document.querySelector( '#editor' ) )

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-27 10:42:37
+/* Smarty version 4.3.0, created on 2023-03-02 14:05:31
   from 'C:\MAMP\htdocs\agcms\views\pages\editprofile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63fc891d90c628_70099112',
+  'unifunc' => 'content_6400ad2bcd9ab5_95587281',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0b7a102f4c3f877aef46d6fcd3f2e19874461fc2' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprofile.tpl',
-      1 => 1677494555,
+      1 => 1677765147,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63fc891d90c628_70099112 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6400ad2bcd9ab5_95587281 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8990897863fc891d90b3f7_71592336', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1716554456400ad2bcd7918_05588965', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_8990897863fc891d90b3f7_71592336 extends Smarty_Internal_Block
+class Block_1716554456400ad2bcd7918_05588965 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_8990897863fc891d90b3f7_71592336',
+    0 => 'Block_1716554456400ad2bcd7918_05588965',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -82,7 +82,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
         <div class="form-group mb-3">
         <label for="user_name">Change company name</label>
-        <input type="text" class="form-control" id="user_name" value="Anglian Creative" name="user_company">
+        <input type="text" class="form-control" id="user_company" value="Anglian Creative" name="user_company">
     </div>
         <div class="form-group">
             <label for="user_profile">Change company picture</label>

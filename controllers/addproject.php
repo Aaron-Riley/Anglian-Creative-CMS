@@ -1,8 +1,7 @@
 <?php
 
-// This needs editing to submit projects instead of blogs
 
-if (isset($_POST['submitBlog'])) {
+if (isset($_POST['submitProject'])) {
     try {
         $title = $_POST['title'];
         $content = null;
@@ -22,11 +21,11 @@ if (isset($_POST['submitBlog'])) {
             $imageUrl = putObject($image_tmp, $image);
 
 
-            $sql = "INSERT INTO blog (title, content, author, image_url) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO projects (title, content, user_name, image_url) VALUES (?, ?, ?, ?)";
             $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, 'aaron', $imageUrl]);
+            $stmt->execute([$title, $content, $_SESSION, $imageUrl]);
 
-            header('Location: /blog');
+            header('Location: index.php?p=projects');
         } else {
             print_r($errors);
         }

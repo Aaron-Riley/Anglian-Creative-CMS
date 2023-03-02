@@ -1,45 +1,15 @@
-<?php
-/* Smarty version 4.3.0, created on 2023-03-02 14:05:24
-  from 'C:\MAMP\htdocs\agcms\views\pages\password.tpl' */
+{extends file="layouts/main.tpl"}
+{block name="body"}
+{if $error}
+<div class="alert alert-danger mb-3" role="alert">
+  {$error}
+</div>
+  {else if $success}
+    <div class="alert alert-success mb-3" role="alert">
+    {$success}
+    </div>
+  {/if}
 
-/* @var Smarty_Internal_Template $_smarty_tpl */
-if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.3.0',
-  'unifunc' => 'content_6400ad247ef0c2_87799642',
-  'has_nocache_code' => false,
-  'file_dependency' => 
-  array (
-    '21646cda4c21d3cb4687de764d98c0a51365e482' => 
-    array (
-      0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\password.tpl',
-      1 => 1677765919,
-      2 => 'file',
-    ),
-  ),
-  'includes' => 
-  array (
-  ),
-),false)) {
-function content_6400ad247ef0c2_87799642 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->_loadInheritance();
-$_smarty_tpl->inheritance->init($_smarty_tpl, true);
-?>
-
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20814803456400ad247ee133_06900088', "body");
-$_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
-}
-/* {block "body"} */
-class Block_20814803456400ad247ee133_06900088 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'body' => 
-  array (
-    0 => 'Block_20814803456400ad247ee133_06900088',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
 
     <div class="content">
     <div class="container">
@@ -59,7 +29,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     </div>
      <div class="row mt-5">
         <div class="col-sm">
-          <form action="" method="POST">
+          <form action="" method="post">
             <h1 class="h3 mb-3 fw-normal">Input details here.</h1>
   
             <div class="form-floating mb-4">
@@ -71,8 +41,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
               <label for="newPassword">New Password</label>
             </div>
             <button class="w-100 btn btn-lg btn-primary mb-5" type="submit">Change password</button>
-          </form>
-        </div>
+            </form>
+            </div>
         <div class="col-sm">
           <img src="images/password.jpg" class="d-block mx-lg-auto img-fluid mb-5" alt="Fitness Image" width="700" height="500" loading="lazy">
         </div>
@@ -80,8 +50,4 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
   
       </div>
     </div>
-<?php
-}
-}
-/* {/block "body"} */
-}
+{/block}

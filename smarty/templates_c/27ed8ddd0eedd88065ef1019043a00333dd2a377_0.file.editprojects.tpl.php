@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-01 15:20:11
+/* Smarty version 4.3.0, created on 2023-03-02 14:50:34
   from 'C:\MAMP\htdocs\agcms\views\pages\editprojects.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63ff6d2b3c91e5_37153294',
+  'unifunc' => 'content_6400b7ba3072e9_33793568',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27ed8ddd0eedd88065ef1019043a00333dd2a377' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprojects.tpl',
-      1 => 1677063261,
+      1 => 1677768631,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63ff6d2b3c91e5_37153294 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6400b7ba3072e9_33793568 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_116019509863ff6d2b3c7fe5_79462862', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21253265296400b7ba306752_74851060', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_116019509863ff6d2b3c7fe5_79462862 extends Smarty_Internal_Block
+class Block_21253265296400b7ba306752_74851060 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_116019509863ff6d2b3c7fe5_79462862',
+    0 => 'Block_21253265296400b7ba306752_74851060',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,9 +67,10 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <a href="#" class="text-decoration-none text-white">Edit Project</a>
             </h1>
         </div>
+        <form method="POST" enctype="multipart/form-data">
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Title</h3>
-            <input type="text" class="form-control d-flex align-items-center" placeholder="Title">
+            <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
             <h3 class="mt-5 d-flex align-items-center">Content</h3>
             <div id="editor">
                 <p>This is some sample content.</p>
@@ -77,11 +78,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
-            <input type="file" class="form-control d-flex align-items-center" placeholder="Title">
-        <div class="d-flex justify-content-start">
-            <button type="button" class="btn btn-primary mt-5 px-3 mr-3">Submit</button>
-            <button type="button" class="btn btn-secondary mt-5 px-3">Delete</button>
+            <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Title">
+            <div class="d-flex justify-content-start">
+                <button type="submit" class="btn btn-primary mt-5 px-3 mr-2" name="changeProject">Submit</button>
+                <button type="submit" class="btn btn-secondary mt-5 px-3" name="deleteProject">Delete</button>
+            </div>
         </div>
+    </form>
         <?php echo '<script'; ?>
 >
             ClassicEditor

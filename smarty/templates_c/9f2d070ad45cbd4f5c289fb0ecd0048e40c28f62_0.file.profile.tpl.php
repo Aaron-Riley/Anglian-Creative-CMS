@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-27 10:55:02
+/* Smarty version 4.3.0, created on 2023-03-02 16:06:38
   from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63fc8c0696bf46_68871970',
+  'unifunc' => 'content_6400c98e951af4_12709037',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
-      1 => 1677494728,
+      1 => 1677773195,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63fc8c0696bf46_68871970 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6400c98e951af4_12709037 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15226709763fc8c0696a767_00660192', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6128202336400c98e950d14_21743143', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_15226709763fc8c0696a767_00660192 extends Smarty_Internal_Block
+class Block_6128202336400c98e950d14_21743143 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_15226709763fc8c0696a767_00660192',
+    0 => 'Block_6128202336400c98e950d14_21743143',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,7 +67,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <h3>Anglian Creative</h3>
         </div>
         <div class="container">
-          <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+          <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
           <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
         </div>
       </div>
