@@ -23,7 +23,7 @@ if (isset($_POST['submitProject'])) {
 
             $sql = "INSERT INTO projects (title, content, user_name, image_url) VALUES (?, ?, ?, ?)";
             $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, $_SESSION, $imageUrl]);
+            $stmt->execute([$title, $content, $_SESSION['user_data']['user_name'], $imageUrl]);
 
             header('Location: index.php?p=projects');
         } else {
