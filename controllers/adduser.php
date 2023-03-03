@@ -1,13 +1,15 @@
 <?php
-
-if ($_POST){
-    if ($_POST['addUser']) {
-    } else if (!$_POST['name']) {
+$error = null;
+if ($_POST) {
+    
+    if (isset($_POST['addUser'])) {
+      
+        if (!$_POST['name']) {
             $error = "Name not set";
-        if (!$_POST['email']) {
+        } else if (!$_POST['email']) {
             $error = "Email not set";
         } else if (!$_POST['password']) {
-            $error = "Password not set"; 
+            $error = "Password not set";
         } else if (!$_POST['password_confirm']) {
             $error = "Confirmed password not set";
         } else if ($_POST['password'] != $_POST['password_confirm']) {
@@ -17,18 +19,19 @@ if ($_POST){
         } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $error = "Email is not vaild";
         }
-        
-        if ($error) {
-            $smarty->assign('error', $error);
-        } else {
-            $User = new User($Conn);
-            $attempt = $User->createUser($_POST);
-            
-            if ($attempt) {
-                $smarty->assign('success', 'Your account has been created. Please now login');
+            if ($error) {
+                $smarty->assign('error', $error);
             } else {
-                $smarty->assign('error', 'An error has occured, Please try again later. ');
+                $User = new User($Conn);
+                $attempt = $User->createUser($_POST);
+           
+                if ($attempt) {
+                    $smarty->assign('success', 'Your account has been created. Please now login');
+                } else {
+                   
+                    $smarty->assign('error', 'An error has occured, Please try again later. ');
+                }
             }
         }
     }
-    }
+

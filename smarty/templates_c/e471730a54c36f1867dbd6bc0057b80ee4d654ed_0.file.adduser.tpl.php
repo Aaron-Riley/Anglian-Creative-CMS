@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-02 17:46:07
+/* Smarty version 4.3.0, created on 2023-03-03 13:59:47
   from 'C:\MAMP\htdocs\agcms\views\pages\adduser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6400e0df874651_32555471',
+  'unifunc' => 'content_6401fd539b5fa6_78078157',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e471730a54c36f1867dbd6bc0057b80ee4d654ed' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\adduser.tpl',
-      1 => 1677779164,
+      1 => 1677851984,
       2 => 'file',
     ),
   ),
@@ -20,29 +20,30 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6400e0df874651_32555471 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6401fd539b5fa6_78078157 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15081764416400e0df86c835_02066995', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2103564606401fd539a57c2_71838037', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_15081764416400e0df86c835_02066995 extends Smarty_Internal_Block
+class Block_2103564606401fd539a57c2_71838037 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_15081764416400e0df86c835_02066995',
+    0 => 'Block_2103564606401fd539a57c2_71838037',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
+  
   <div class="content">
-
+  
     <div class="d-flex justify-content-start">
       <h1 class="d-flex align-items-center mt-3">
         <a href="index.php?p=user" class="text-decoration-none text-white">
@@ -62,22 +63,21 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       </h1>
     </div>
 
-    <?php if ($_smarty_tpl->tpl_vars['error']->value) {?>
+    
+    <form method="POST" enctype="multipart/form-data">
+    <?php if ((isset($_smarty_tpl->tpl_vars['error']->value))) {?>
       <div class="alert alert-danger" role="alert">
           <?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 
       </div>
   <?php }?>
-
- <?php if ($_smarty_tpl->tpl_vars['success']->value) {?>
+  
+  <?php if ((isset($_smarty_tpl->tpl_vars['success']->value))) {?>
       <div class="alert alert-success" role="alert">
           <?php echo $_smarty_tpl->tpl_vars['success']->value;?>
 
       </div>
   <?php }?>
-
-
-    <form method="POST" enctype="multipart/form-data">
         <div class="container">
           <h3 class="mt-5 d-flex align-items-center">Name</h3>
           <input type="text" class="form-control d-flex align-items-center" name="name" id="name" placeholder="Name">
@@ -94,24 +94,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           </div>  
           <h3 class="mt-5 d-flex align-items-center">Role</h3>
      
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" disabled>
-            <label class="form-check-label" for="flexCheckDefault">
-              Global Administrator
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" disabled>
-            <label class="form-check-label" for="flexCheckChecked">
-             Developer
-            </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" disabled>
-          <label class="form-check-label" for="flexCheckChecked">
-            Creator
-          </label>
-        </div>
+
+          <select name="role">
+            <option value="Global Administrator">Global Administrator</option>
+            <option value="Developer">Developer</option>
+            <option value="Creator">Creator</option>
+          </select>
+
           <div class="d-flex justify-content-start">
             <button type="submit" class="btn btn-primary mt-5" name="addUser">Submit</button>
           </div>

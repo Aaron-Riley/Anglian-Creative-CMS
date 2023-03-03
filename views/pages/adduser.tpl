@@ -1,7 +1,8 @@
 {extends file="layouts/main.tpl"}
 {block name="body"}
+  
   <div class="content">
-
+  
     <div class="d-flex justify-content-start">
       <h1 class="d-flex align-items-center mt-3">
         <a href="index.php?p=user" class="text-decoration-none text-white">
@@ -21,20 +22,19 @@
       </h1>
     </div>
 
-    {if $error}
+    
+    <form method="POST" enctype="multipart/form-data">
+    {if isset($error)}
       <div class="alert alert-danger" role="alert">
           {$error}
       </div>
   {/if}
-
- {if $success}
+  
+  {if isset($success)}
       <div class="alert alert-success" role="alert">
           {$success}
       </div>
   {/if}
-
-
-    <form method="POST" enctype="multipart/form-data">
         <div class="container">
           <h3 class="mt-5 d-flex align-items-center">Name</h3>
           <input type="text" class="form-control d-flex align-items-center" name="name" id="name" placeholder="Name">
@@ -51,24 +51,13 @@
           </div>  
           <h3 class="mt-5 d-flex align-items-center">Role</h3>
      
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" disabled>
-            <label class="form-check-label" for="flexCheckDefault">
-              Global Administrator
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" disabled>
-            <label class="form-check-label" for="flexCheckChecked">
-             Developer
-            </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" disabled>
-          <label class="form-check-label" for="flexCheckChecked">
-            Creator
-          </label>
-        </div>
+
+          <select name="role">
+            <option value="Global Administrator">Global Administrator</option>
+            <option value="Developer">Developer</option>
+            <option value="Creator">Creator</option>
+          </select>
+
           <div class="d-flex justify-content-start">
             <button type="submit" class="btn btn-primary mt-5" name="addUser">Submit</button>
           </div>
