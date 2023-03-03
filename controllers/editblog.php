@@ -56,9 +56,9 @@ if (isset($_POST['deleteBlog'])) {
             $imageUrl = putObject($image_tmp, $image);
 
 //Create SQL Statement where latest blog uploaded is the one deleted
-            $sql = "DELETE FROM blog WHERE blog_id =";
+            $sql = "DELETE FROM blog WHERE blog_id = ?";
             $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, $_SESSION, $imageUrl]);
+            $stmt->execute([$title, $content, $_SESSION['user_data']['user_name'], $imageUrl]);
 
             header('Location: index.php?p=blog');
         } else {
