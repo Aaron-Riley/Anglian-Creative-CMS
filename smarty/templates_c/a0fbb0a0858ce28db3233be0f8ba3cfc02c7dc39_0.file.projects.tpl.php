@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-21 11:14:52
+/* Smarty version 4.3.0, created on 2023-03-04 11:11:36
   from 'C:\MAMP\htdocs\agcms\views\pages\projects.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63f4a7ac1782b0_28324126',
+  'unifunc' => 'content_6403276870fc98_05008171',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a0fbb0a0858ce28db3233be0f8ba3cfc02c7dc39' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\projects.tpl',
-      1 => 1676977989,
+      1 => 1677928287,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63f4a7ac1782b0_28324126 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6403276870fc98_05008171 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_98048169063f4a7ac177b43_73277603', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15752805006403276870ead9_66132326', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_98048169063f4a7ac177b43_73277603 extends Smarty_Internal_Block
+class Block_15752805006403276870ead9_66132326 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_98048169063f4a7ac177b43_73277603',
+    0 => 'Block_15752805006403276870ead9_66132326',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -62,22 +62,17 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <a href="index.php?p=addproject">
       <button type="button" class="btn btn-primary px-3">Add</button>
     </a>
-    <a href="index.php?p=editprojects">
-      <button type="button" class="btn btn-secondary px-3">Edit</button>
-    </a>
   </div>
   <div class="container">
     <div class="row mb-2 mt-3">
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
@@ -85,13 +80,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
@@ -101,13 +94,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3>
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
@@ -115,13 +106,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
@@ -131,13 +120,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
@@ -145,13 +132,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-dark">Productivity</strong>
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
+              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
             </h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#">Continue reading</a>
           </div>
           <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>

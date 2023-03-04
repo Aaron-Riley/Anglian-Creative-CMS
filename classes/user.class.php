@@ -66,8 +66,7 @@ class User
         return $stmt->fetch();
     }
 
-    public function changeUserPassword($current_pass, $new_pass)
-    {
+    public function changeUserPassword($current_pass, $new_pass){
         if (!password_verify($current_pass, $_SESSION['user_data']['user_pass'])) {
             // wrong password
             return false;

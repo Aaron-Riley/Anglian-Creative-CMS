@@ -19,7 +19,6 @@ if ($_POST) {
         
 
             $user_data = $User->loginUser($_POST['email'], $_POST['password']);
-            var_dump($user_data);
             if ($user_data) {
                 echo "in";
                 $_SESSION['is_loggedin'] = true;

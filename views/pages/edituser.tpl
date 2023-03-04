@@ -22,37 +22,30 @@
     </div>
 
     <form method="POST" enctype="multipart/form-data">
+      <div class="container">
+        <h3 class="mt-5 d-flex align-items-center">Name</h3>
+        <input type="text" class="form-control d-flex align-items-center" placeholder="Name">
+        <h3 class="mt-5 d-flex align-items-center">Email</h3>
+        <input type="email" class="form-control d-flex align-items-center" placeholder="Email">
         <div class="container">
-          <h3 class="mt-5 d-flex align-items-center">Name</h3>
-          <input type="text" class="form-control d-flex align-items-center" placeholder="Name">
-          <h3 class="mt-5 d-flex align-items-center">Email</h3>
-          <input type="email" class="form-control d-flex align-items-center" placeholder="Email">
-          <div class="container">
           <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
           <div class="form-group">
-          <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="user_profile">
-          </div>  
-          <h3 class="mt-5 d-flex align-items-center">Role</h3>
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Role
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Global Administrator</a></li>
-              <li><a class="dropdown-item" href="#">Developer</a></li>
-              <li><a class="dropdown-item" href="#">Creator</a></li>
-            </ul>
+            <input type="file" class="form-control-file mt-3"
+              value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="user_profile">
           </div>
-          <h3 class="mt-3 d-flex align-items-center">Staus</h3>
-          <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Status
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Inactive</a></li>
-            <li><a class="dropdown-item" href="#">Suspended</a></li>
-          </ul>
-        </div>
+          <h3 class="mt-5 d-flex align-items-center">Role</h3>
+
+          <select name="role">
+            <option value="Global Administrator">Global Administrator</option>
+            <option value="Developer">Developer</option>
+            <option value="Creator">Creator</option>
+          </select>
+
+          <h3 class="mt-5 d-flex align-items-center">Status</h3>
+          <select name="status">
+            <option value="Active">Active</option>
+            <option value="Suspended">Suspended</option>
+          </select>
           <div class="d-flex justify-content-start">
             <button type="button" class="btn btn-primary mt-5">Submit</button>
           </div>

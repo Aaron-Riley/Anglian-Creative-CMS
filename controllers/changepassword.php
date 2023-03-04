@@ -7,7 +7,7 @@ if ($_POST) {
         $error = "New password not set";
     }
 
-    if ($error) {
+    if (isset($error)) {
         $smarty->assign('error', $error);
     } else {
         //Validation passed

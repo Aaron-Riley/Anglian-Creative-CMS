@@ -26,7 +26,7 @@ if ($_POST) {
                 $attempt = $User->createUser($_POST);
            
                 if ($attempt) {
-                    $smarty->assign('success', 'Your account has been created. Please now login');
+                    $smarty->assign('success', 'This users account has been created.');
                 } else {
                    
                     $smarty->assign('error', 'An error has occured, Please try again later. ');
