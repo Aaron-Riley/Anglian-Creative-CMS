@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-03 14:12:05
+/* Smarty version 4.3.0, created on 2023-03-10 12:08:41
   from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_64020035cad0a2_13955175',
+  'unifunc' => 'content_640b1dc96e9441_11378379',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5be134a23c6226fad531abc2982741c97a4abbdc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
-      1 => 1677852685,
+      1 => 1678449940,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64020035cad0a2_13955175 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640b1dc96e9441_11378379 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -49,6 +49,10 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+<?php echo '<script'; ?>
+ src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"><?php echo '</script'; ?>
+>
+</head>
   </head>
   <body class="page-<?php echo $_smarty_tpl->tpl_vars['view_name']->value;?>
 ">
@@ -216,7 +220,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
           <hr />
         </div>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_57453504064020035cab5e0_10179845', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2058465550640b1dc96e6c39_49656482', "body");
 ?>
 
 
@@ -230,16 +234,27 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_57453504064020035c
   crossorigin="anonymous"
 ><?php echo '</script'; ?>
 >
+
+  <?php echo '<script'; ?>
+>
+      ClassicEditor
+          .create(document.querySelector('#editor'))
+          .catch(error => {
+              console.error(error);
+          });
+          <?php echo '</script'; ?>
+>
+      
 </body>
 </html>
 <?php }
 /* {block "body"} */
-class Block_57453504064020035cab5e0_10179845 extends Smarty_Internal_Block
+class Block_2058465550640b1dc96e6c39_49656482 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_57453504064020035cab5e0_10179845',
+    0 => 'Block_2058465550640b1dc96e6c39_49656482',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

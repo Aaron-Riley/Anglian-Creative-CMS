@@ -4,7 +4,7 @@
 if (isset($_POST['submitProject'])) {
     try {
         $title = $_POST['title'];
-        $content = null;
+        $content = $_POST['content'];
         $image = $_FILES['image']['name'];
 
         // Image Upload and Validation 

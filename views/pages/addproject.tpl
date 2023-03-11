@@ -24,9 +24,9 @@
             <h3 class="mt-5 d-flex align-items-center">Title</h3>
             <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
             <h3 class="mt-5 d-flex align-items-center">Content</h3>
-            <div id="editor">
-                <p>This is some sample content.</p>
-            </div>
+            <textarea id="editor" name="content" placeholder="Tell your story...">
+         
+            </textarea>
         </div>
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
@@ -36,11 +36,5 @@
             </div>
         </div>
     </form>
-            <script>
-                ClassicEditor
-                    .create(document.querySelector('#editor'))
-                    .catch(error => {
-                        console.error(error);
-                    });
-            </script>
+
 {/block}

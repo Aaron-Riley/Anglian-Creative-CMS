@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-22 17:32:26
+/* Smarty version 4.3.0, created on 2023-03-10 13:52:49
   from 'C:\MAMP\htdocs\agcms\views\pages\addblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63f651aa2a4c65_35768178',
+  'unifunc' => 'content_640b363141b086_96311341',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '855ded6483724514f82b2df7ef20ab131af56a17' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\addblog.tpl',
-      1 => 1677087133,
+      1 => 1678456361,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63f651aa2a4c65_35768178 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640b363141b086_96311341 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_90624776363f651aa2a3540_50695275', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1709894448640b3631418e32_25048372', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_90624776363f651aa2a3540_50695275 extends Smarty_Internal_Block
+class Block_1709894448640b3631418e32_25048372 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_90624776363f651aa2a3540_50695275',
+    0 => 'Block_1709894448640b3631418e32_25048372',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,27 +65,19 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <h3 class="mt-5 d-flex align-items-center">Title</h3>
                 <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
                 <h3 class="mt-5 d-flex align-items-center">Content</h3>
-                <div id="editor">
-                    <p>This is some sample content.</p>
-                </div>
+                <textarea id="editor" name="content" placeholder="Tell your story...">
+             
+                </textarea>
             </div>
             <div class="container">
                 <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
-                <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Title">
+                <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Featured Image">
                 <div class="d-flex justify-content-start">
                     <button type="submit" class="btn btn-primary mt-5" name="submitBlog">Submit</button>
                 </div>
             </div>
         </form>
-        <?php echo '<script'; ?>
->
-            ClassicEditor
-                .create(document.querySelector('#editor'))
-                .catch(error => {
-                    console.error(error);
-                });
-        <?php echo '</script'; ?>
->
+
 <?php
 }
 }

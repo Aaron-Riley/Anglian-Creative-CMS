@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-02 15:05:26
+/* Smarty version 4.3.0, created on 2023-03-10 14:37:09
   from 'C:\MAMP\htdocs\agcms\views\pages\editblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6400bb3661be53_22976704',
+  'unifunc' => 'content_640b4095c594d8_89536952',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6554ac40a6cef1d8c4a338f290bb7ca7afb3f35b' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editblog.tpl',
-      1 => 1677769517,
+      1 => 1678459026,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6400bb3661be53_22976704 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640b4095c594d8_89536952 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8565597176400bb3661ab69_97571718', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_711326776640b4095c575a6_80490485', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_8565597176400bb3661ab69_97571718 extends Smarty_Internal_Block
+class Block_711326776640b4095c575a6_80490485 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_8565597176400bb3661ab69_97571718',
+    0 => 'Block_711326776640b4095c575a6_80490485',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -66,9 +66,9 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <h3 class="mt-5 d-flex align-items-center">Title</h3>
             <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
             <h3 class="mt-5 d-flex align-items-center">Content</h3>
-            <div id="editor">
-                <p>This is some sample content.</p>
-            </div>
+                <textarea id="editor" name="content" placeholder="Tell your story...">
+             
+                </textarea>
         </div>
         <div class="container">
             <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
@@ -79,15 +79,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             </div>
         </div>
     </form>
-        <?php echo '<script'; ?>
->
-            ClassicEditor
-                .create( document.querySelector( '#editor' ) )
-                .catch( error => {
-                    console.error( error );
-                } );
-        <?php echo '</script'; ?>
->
+
 <?php
 }
 }

@@ -24,82 +24,22 @@
   </div>
   <div class="container">
     <div class="row mb-2 mt-3">
+    {foreach from=$projects item=project}
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      <a style="text-decoration: none;" href="index.php?p=editprojects&id={$project.project_id}">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+      <h3 class="mb-0">
+      {$project.title}
+      </h3>
+      <div class="mb-1 text-muted">{$project.created_on}</div>
+      <p class="card-text mb-auto text-dark">{$project.content}</p>
       </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="{$project.image_url}" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
       </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3>
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      </a>
       </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
+    {/foreach}
     </div>
   </div>
   </div>

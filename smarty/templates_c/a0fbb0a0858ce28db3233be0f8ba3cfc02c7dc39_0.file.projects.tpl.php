@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-04 11:11:36
+/* Smarty version 4.3.0, created on 2023-03-10 20:48:04
   from 'C:\MAMP\htdocs\agcms\views\pages\projects.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6403276870fc98_05008171',
+  'unifunc' => 'content_640b9784d69ff4_44893017',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a0fbb0a0858ce28db3233be0f8ba3cfc02c7dc39' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\projects.tpl',
-      1 => 1677928287,
+      1 => 1678481281,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6403276870fc98_05008171 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640b9784d69ff4_44893017 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15752805006403276870ead9_66132326', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1919719870640b9784d49739_62764298', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_15752805006403276870ead9_66132326 extends Smarty_Internal_Block
+class Block_1919719870640b9784d49739_62764298 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_15752805006403276870ead9_66132326',
+    0 => 'Block_1919719870640b9784d49739_62764298',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -65,82 +65,34 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
   </div>
   <div class="container">
     <div class="row mb-2 mt-3">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['projects']->value, 'project');
+$_smarty_tpl->tpl_vars['project']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['project']->value) {
+$_smarty_tpl->tpl_vars['project']->do_else = false;
+?>
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      <a style="text-decoration: none;" href="index.php?p=editprojects&id=<?php echo $_smarty_tpl->tpl_vars['project']->value['project_id'];?>
+">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+      <h3 class="mb-0">
+      <?php echo $_smarty_tpl->tpl_vars['project']->value['title'];?>
+
+      </h3>
+      <div class="mb-1 text-muted"><?php echo $_smarty_tpl->tpl_vars['project']->value['created_on'];?>
+</div>
+      <p class="card-text mb-auto text-dark"><?php echo $_smarty_tpl->tpl_vars['project']->value['content'];?>
+</p>
       </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="<?php echo $_smarty_tpl->tpl_vars['project']->value['image_url'];?>
+" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
       </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3>
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      </a>
       </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editprojects">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
+    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
   </div>
   </div>

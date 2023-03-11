@@ -1,10 +1,16 @@
 <?php
 
+// get project info
+$Project = new Project($Conn);
+
+$projectData = $Project->getProjectById($_GET['id']);
+$smarty->assign("projectData", $projectData);
+
 
 if (isset($_POST['changeProject'])) {
     try {
         $title = $_POST['title'];
-        $content = null;
+        $content = $_POST['content'];
         $image = $_FILES['image']['name'];
 
         // Image Upload and Validation 
@@ -39,7 +45,7 @@ if (isset($_POST['changeProject'])) {
 if (isset($_POST['deleteProject'])) {
     try {
         $title = $_POST['title'];
-        $content = null;
+        $content = $_POST['content'];
         $image = $_FILES['image']['name'];
 
         // Image Upload and Validation 

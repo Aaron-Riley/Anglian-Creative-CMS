@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-04 11:08:21
+/* Smarty version 4.3.0, created on 2023-03-10 15:14:09
   from 'C:\MAMP\htdocs\agcms\views\pages\blog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640326a574a9e6_51759113',
+  'unifunc' => 'content_640b4941834591_49728068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63a9f61d15ea74ae52be83c4f5399ad7d68fd0bf' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\blog.tpl',
-      1 => 1677928098,
+      1 => 1678461246,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640326a574a9e6_51759113 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640b4941834591_49728068 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1760372517640326a5749733_26092468', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2019525274640b4941818c75_38928346', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1760372517640326a5749733_26092468 extends Smarty_Internal_Block
+class Block_2019525274640b4941818c75_38928346 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1760372517640326a5749733_26092468',
+    0 => 'Block_2019525274640b4941818c75_38928346',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -59,85 +59,35 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
   </div>
   <div class="container">
     <div class="row mb-2 mt-3">
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['blogs']->value, 'blog');
+$_smarty_tpl->tpl_vars['blog']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['blog']->value) {
+$_smarty_tpl->tpl_vars['blog']->do_else = false;
+?>
       <div class="col-md-6">
         <div class="card flex-md-row mb-4 box-shadow h-md-250">
           <div class="card-body d-flex flex-column align-items-start">
             <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
+              <a class="text-dark" href="index.php?p=editblog"><?php echo $_smarty_tpl->tpl_vars['blog']->value['title'];?>
+</a>
             </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <div class="mb-1 text-muted"><?php echo $_smarty_tpl->tpl_vars['blog']->value['created_on'];?>
+</div>
+            <p class="card-text mb-auto text-dark"><?php echo $_smarty_tpl->tpl_vars['blog']->value['content'];?>
+</p>
           </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
+          <img class="card-img-right flex-auto d-none d-md-block" src="<?php echo $_smarty_tpl->tpl_vars['blog']->value['image_url'];?>
+" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3>
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2 mt-3">
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/mailchimp-lsdA8QpWN_A-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto text-dark">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="./images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
-      </div>
-    </div>
+    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    </div>  
   </div>
-  </div>
+</div>
+
  
 <?php
 }
