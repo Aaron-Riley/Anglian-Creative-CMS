@@ -61,7 +61,7 @@ if (isset($_POST['deleteProject'])) {
         if (empty($errors) == true) {
             $imageUrl = putObject($image_tmp, $image);
 
-//Create SQL Statement where latest project uploaded is the one deleted
+//Create SQL Statement where project can be deleted
             $sql = "DELETE FROM projects WHERE project_id =";
             $stmt = $Conn->prepare($sql);
             $stmt->execute([$title, $content, $_SESSION, $imageUrl]);
@@ -74,3 +74,4 @@ if (isset($_POST['deleteProject'])) {
         echo 'Caught exception: ', $e->getMessage();
     }
 }
+ 

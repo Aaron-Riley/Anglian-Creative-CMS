@@ -15,7 +15,7 @@
         </h1>
       </div>
 
-      <div id="profile" class="row mt-3 mb-5">
+      <div id="profile" class="row mt-3 mb-5 text-white">
         <div class="col-lg-6">
           <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
           <h3>Patrick Spector</h3>

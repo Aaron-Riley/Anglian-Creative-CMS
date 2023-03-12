@@ -23,17 +23,17 @@
 
     <form method="POST" enctype="multipart/form-data">
       <div class="container">
-        <h3 class="mt-5 d-flex align-items-center">Name</h3>
+        <h3 class="mt-5 d-flex align-items-center text-white">Name</h3>
         <input type="text" class="form-control d-flex align-items-center" placeholder="Name">
-        <h3 class="mt-5 d-flex align-items-center">Email</h3>
+        <h3 class="mt-5 d-flex align-items-center text-white">Email</h3>
         <input type="email" class="form-control d-flex align-items-center" placeholder="Email">
         <div class="container">
-          <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
           <div class="form-group">
             <input type="file" class="form-control-file mt-3"
               value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="user_profile">
           </div>
-          <h3 class="mt-5 d-flex align-items-center">Role</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Role</h3>
 
           <select name="role">
             <option value="Global Administrator">Global Administrator</option>
@@ -41,7 +41,7 @@
             <option value="Creator">Creator</option>
           </select>
 
-          <h3 class="mt-5 d-flex align-items-center">Status</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Status</h3>
           <select name="status">
             <option value="Active">Active</option>
             <option value="Suspended">Suspended</option>

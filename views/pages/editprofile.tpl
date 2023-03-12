@@ -11,7 +11,7 @@
         </h1>
     </div>
 
-    <div id="profile" class="row mt-3 mb-5">
+    <div id="profile" class="row mt-3 mb-5 text-white">
     <div class="col-lg-6">
       <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
       <h3>Patrick Spector</h3>
@@ -22,11 +22,11 @@
       <h3>Anglian Creative</h3>
     </div>
     <div class="container">
-    <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+    <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
     <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
     </div>
     </div>
-    <form action="" method="post" class="form-light" enctype="multipart/form-data">
+    <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label for="user_name">Change name</label>
             <input type="text" class="form-control" id="user_name" value="Aaron" name="user_name">

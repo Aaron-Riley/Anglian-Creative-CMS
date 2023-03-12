@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-02 14:05:31
+/* Smarty version 4.3.0, created on 2023-03-12 18:54:41
   from 'C:\MAMP\htdocs\agcms\views\pages\editprofile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6400ad2bcd9ab5_95587281',
+  'unifunc' => 'content_640e1ff14dca02_29016351',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0b7a102f4c3f877aef46d6fcd3f2e19874461fc2' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprofile.tpl',
-      1 => 1677765147,
+      1 => 1678647271,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6400ad2bcd9ab5_95587281 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640e1ff14dca02_29016351 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1716554456400ad2bcd7918_05588965', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1924721449640e1ff14da8d7_50053106', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1716554456400ad2bcd7918_05588965 extends Smarty_Internal_Block
+class Block_1924721449640e1ff14da8d7_50053106 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1716554456400ad2bcd7918_05588965',
+    0 => 'Block_1924721449640e1ff14da8d7_50053106',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,7 +52,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </h1>
     </div>
 
-    <div id="profile" class="row mt-3 mb-5">
+    <div id="profile" class="row mt-3 mb-5 text-white">
     <div class="col-lg-6">
       <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
       <h3>Patrick Spector</h3>
@@ -63,11 +63,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       <h3>Anglian Creative</h3>
     </div>
     <div class="container">
-    <a href="index.php?p=password" class="btn btn-primary">Change Password</a>
+    <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
     <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
     </div>
     </div>
-    <form action="" method="post" class="form-light" enctype="multipart/form-data">
+    <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label for="user_name">Change name</label>
             <input type="text" class="form-control" id="user_name" value="Aaron" name="user_name">

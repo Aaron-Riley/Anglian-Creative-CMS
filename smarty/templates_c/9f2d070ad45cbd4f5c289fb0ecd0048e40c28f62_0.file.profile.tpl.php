@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-02 16:06:38
+/* Smarty version 4.3.0, created on 2023-03-12 18:37:00
   from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_6400c98e951af4_12709037',
+  'unifunc' => 'content_640e1bcc2fc205_07824020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
-      1 => 1677773195,
+      1 => 1678646217,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6400c98e951af4_12709037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640e1bcc2fc205_07824020 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6128202336400c98e950d14_21743143', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1686063685640e1bcc2fb961_08659310', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_6128202336400c98e950d14_21743143 extends Smarty_Internal_Block
+class Block_1686063685640e1bcc2fb961_08659310 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_6128202336400c98e950d14_21743143',
+    0 => 'Block_1686063685640e1bcc2fb961_08659310',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -56,7 +56,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </h1>
       </div>
 
-      <div id="profile" class="row mt-3 mb-5">
+      <div id="profile" class="row mt-3 mb-5 text-white">
         <div class="col-lg-6">
           <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
           <h3>Patrick Spector</h3>

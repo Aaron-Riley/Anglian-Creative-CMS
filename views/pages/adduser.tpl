@@ -36,20 +36,20 @@
       </div>
   {/if}
         <div class="container">
-          <h3 class="mt-5 d-flex align-items-center">Name</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Name</h3>
           <input type="text" class="form-control d-flex align-items-center" name="name" id="name" placeholder="Name">
-          <h3 class="mt-5 d-flex align-items-center">Email</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Email</h3>
           <input type="email" class="form-control d-flex align-items-center" name="email" id="email" placeholder="Email">
-          <h3 class="mt-5 d-flex align-items-center">Password</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Password</h3>
           <input type="password" class="form-control d-flex align-items-center" name="password" id="password" placeholder="Password">
-          <h3 class="mt-5 d-flex align-items-center">Confirm Password</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Confirm Password</h3>
           <input type="password" class="form-control d-flex align-items-center" name="password_confirm" id="password_confirm" placeholder="Repeat Password">
           <div class="container">
-          <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
           <div class="form-group">
           <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_url" name="user_url">
           </div>  
-          <h3 class="mt-5 d-flex align-items-center">Role</h3>
+          <h3 class="mt-5 d-flex align-items-center text-white">Role</h3>
      
 
           <select name="role">

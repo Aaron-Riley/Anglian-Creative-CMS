@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-10 15:14:09
+/* Smarty version 4.3.0, created on 2023-03-12 18:34:02
   from 'C:\MAMP\htdocs\agcms\views\pages\blog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640b4941834591_49728068',
+  'unifunc' => 'content_640e1b1ad0e7e2_60927261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63a9f61d15ea74ae52be83c4f5399ad7d68fd0bf' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\blog.tpl',
-      1 => 1678461246,
+      1 => 1678646040,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640b4941834591_49728068 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640e1b1ad0e7e2_60927261 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2019525274640b4941818c75_38928346', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_624532658640e1b1acfdbc7_82844020', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_2019525274640b4941818c75_38928346 extends Smarty_Internal_Block
+class Block_624532658640e1b1acfdbc7_82844020 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_2019525274640b4941818c75_38928346',
+    0 => 'Block_624532658640e1b1acfdbc7_82844020',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -66,20 +66,23 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['blog']->value) {
 $_smarty_tpl->tpl_vars['blog']->do_else = false;
 ?>
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog"><?php echo $_smarty_tpl->tpl_vars['blog']->value['title'];?>
-</a>
-            </h3>
-            <div class="mb-1 text-muted"><?php echo $_smarty_tpl->tpl_vars['blog']->value['created_on'];?>
+      <a style="text-decoration: none;" href="index.php?p=editblog&id=<?php echo $_smarty_tpl->tpl_vars['blog']->value['blog_id'];?>
+">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+      <h3 class="mb-0">
+      <?php echo $_smarty_tpl->tpl_vars['blog']->value['title'];?>
+
+      </h3>
+      <div class="mb-1 text-muted"><?php echo $_smarty_tpl->tpl_vars['blog']->value['created_on'];?>
 </div>
-            <p class="card-text mb-auto text-dark"><?php echo $_smarty_tpl->tpl_vars['blog']->value['content'];?>
+      <p class="card-text mb-auto text-dark"><?php echo $_smarty_tpl->tpl_vars['blog']->value['content'];?>
 </p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="<?php echo $_smarty_tpl->tpl_vars['blog']->value['image_url'];?>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="<?php echo $_smarty_tpl->tpl_vars['blog']->value['image_url'];?>
 " alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      </div>
+      </a>
       </div>
     <?php
 }

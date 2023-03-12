@@ -21,15 +21,15 @@
         </div>
         <form method="POST" enctype="multipart/form-data">
             <div class="container">
-                <h3 class="mt-5 d-flex align-items-center">Title</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Title</h3>
                 <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
-                <h3 class="mt-5 d-flex align-items-center">Content</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Content</h3>
                 <textarea id="editor" name="content" placeholder="Tell your story...">
              
                 </textarea>
             </div>
             <div class="container">
-                <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
                 <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Featured Image">
                 <div class="d-flex justify-content-start">
                     <button type="submit" class="btn btn-primary mt-5" name="submitBlog">Submit</button>

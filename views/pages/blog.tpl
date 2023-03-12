@@ -20,16 +20,18 @@
     <div class="row mb-2 mt-3">
     {foreach from=$blogs item=blog}
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="index.php?p=editblog">{$blog.title}</a>
-            </h3>
-            <div class="mb-1 text-muted">{$blog.created_on}</div>
-            <p class="card-text mb-auto text-dark">{$blog.content}</p>
-          </div>
-          <img class="card-img-right flex-auto d-none d-md-block" src="{$blog.image_url}" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
-        </div>
+      <a style="text-decoration: none;" href="index.php?p=editblog&id={$blog.blog_id}">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+      <h3 class="mb-0">
+      {$blog.title}
+      </h3>
+      <div class="mb-1 text-muted">{$blog.created_on}</div>
+      <p class="card-text mb-auto text-dark">{$blog.content}</p>
+      </div>
+      <img class="card-img-right flex-auto d-none d-md-block" src="{$blog.image_url}" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
+      </div>
+      </a>
       </div>
     {/foreach}
     </div>  

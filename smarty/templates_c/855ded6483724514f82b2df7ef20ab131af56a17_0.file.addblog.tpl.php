@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-10 13:52:49
+/* Smarty version 4.3.0, created on 2023-03-12 18:27:29
   from 'C:\MAMP\htdocs\agcms\views\pages\addblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640b363141b086_96311341',
+  'unifunc' => 'content_640e19914a7c06_83811987',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '855ded6483724514f82b2df7ef20ab131af56a17' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\addblog.tpl',
-      1 => 1678456361,
+      1 => 1678645643,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640b363141b086_96311341 (Smarty_Internal_Template $_smarty_tpl) {
+function content_640e19914a7c06_83811987 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1709894448640b3631418e32_25048372', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_939142201640e19914a47a6_89426072', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1709894448640b3631418e32_25048372 extends Smarty_Internal_Block
+class Block_939142201640e19914a47a6_89426072 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1709894448640b3631418e32_25048372',
+    0 => 'Block_939142201640e19914a47a6_89426072',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -62,15 +62,15 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
         <form method="POST" enctype="multipart/form-data">
             <div class="container">
-                <h3 class="mt-5 d-flex align-items-center">Title</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Title</h3>
                 <input name="title" type="text" class="form-control d-flex align-items-center" placeholder="Title">
-                <h3 class="mt-5 d-flex align-items-center">Content</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Content</h3>
                 <textarea id="editor" name="content" placeholder="Tell your story...">
              
                 </textarea>
             </div>
             <div class="container">
-                <h3 class="mt-5 d-flex align-items-center">Featured Image</h3>
+                <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
                 <input type="file" name="image" class="form-control d-flex align-items-center" placeholder="Featured Image">
                 <div class="d-flex justify-content-start">
                     <button type="submit" class="btn btn-primary mt-5" name="submitBlog">Submit</button>

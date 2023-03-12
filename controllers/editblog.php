@@ -1,5 +1,11 @@
 <?php
 
+// get project info
+$Blog = new Blog($Conn);
+
+$blogData = $Blog->getBlogById($_GET['id']);
+$smarty->assign("blogData", $blogData);
+
 
 if (isset($_POST['changeBlog'])) {
     try {
@@ -39,7 +45,7 @@ if (isset($_POST['changeBlog'])) {
 if (isset($_POST['deleteBlog'])) {
     try {
         $title = $_POST['title'];
-        $content = null;
+        $content = $_POST['content'];
         $image = $_FILES['image']['name'];
 
         // Image Upload and Validation 
