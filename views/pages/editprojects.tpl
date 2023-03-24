@@ -35,7 +35,7 @@
                     <div class="container">
                         <h2 class="mt-5 d-flex align-items-center">{$projectData.title}</h2>
 
-                        <div>{$projectData.content}</div>
+                        <div class="text-white">{$projectData.content}</div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="edit" role="tabpanel" aria-labelledby="edit-tab">
@@ -55,6 +55,7 @@
                             <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
                             <input type="file" name="image" class="form-control d-flex align-items-center"
                                 placeholder="Title">
+                                <input type="hidden" name="old_image" value="{$projectData.image_url}">
                             <div class="d-flex justify-content-start">
                                 <button type="submit" class="btn btn-primary mt-5 px-3 mr-2"
                                     name="changeProject">Submit</button>

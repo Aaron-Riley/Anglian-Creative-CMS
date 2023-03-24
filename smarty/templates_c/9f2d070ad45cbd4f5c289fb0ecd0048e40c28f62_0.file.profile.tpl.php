@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-12 18:37:00
+/* Smarty version 4.3.0, created on 2023-03-24 14:45:45
   from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640e1bcc2fc205_07824020',
+  'unifunc' => 'content_641db799c83cf4_97541635',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
-      1 => 1678646217,
+      1 => 1679669130,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640e1bcc2fc205_07824020 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641db799c83cf4_97541635 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1686063685640e1bcc2fb961_08659310', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_772312642641db799c75b94_24848347', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1686063685640e1bcc2fb961_08659310 extends Smarty_Internal_Block
+class Block_772312642641db799c75b94_24848347 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1686063685640e1bcc2fb961_08659310',
+    0 => 'Block_772312642641db799c75b94_24848347',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -58,17 +58,32 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
       <div id="profile" class="row mt-3 mb-5 text-white">
         <div class="col-lg-6">
-          <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
-          <h3>Patrick Spector</h3>
-          <p>Global Administrator</p>
+         <?php if ($_smarty_tpl->tpl_vars['user_data']->value['user_url']) {?>
+            <img src="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
+" class="mb-3" alt="Responsive image">
+        <?php } else { ?>
+            <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+        <?php }?>
+          <h3><?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_name'];?>
+</h3>
+          <p><?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_role'];?>
+</p>
         </div>
         <div class="col-lg-6">
+        <?php if ($_smarty_tpl->tpl_vars['company_data']->value['company_url']) {?>
+          <img src="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
+" class="mb-3" alt="Responsive image">
+      <?php } else { ?>
           <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
-          <h3>Anglian Creative</h3>
+      <?php }?>
+          <h3><?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_name'];?>
+</h3>
         </div>
         <div class="container">
           <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
           <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+          <a href="index.php?p=editcompany" class="btn btn-secondary">Edit Company</a>
+
         </div>
       </div>
 <?php

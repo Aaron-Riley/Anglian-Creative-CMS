@@ -2,7 +2,7 @@
 
 //this needs to be edited to remove bio and add company name and logo
 
-class Profile
+class Company
 {
     protected $Conn;
 
@@ -10,17 +10,17 @@ class Profile
     {
         $this->Conn = $Conn;
     }
-    public function addProfile($data)
+    public function addCompany($data)
     {
-        $query = "UPDATE users SET user_name = :user_name, user_profile = :user_profile, user_bio = :user_bio WHERE user_id = :user_id";
+        $query = "UPDATE sys SET company_name = :company_name, company_url = :company_url WHERE company_id = :company_id";
         $stmt = $this->Conn->prepare($query);
-        $data['user_id'] = $_SESSION['user_data']['user_id'];
+        $data['company_id'] = $_SESSION['company_data']['company_id'];
         return $stmt->execute($data);
     }
     
      
-    public function getProfileById($id){
-        $query = "SELECT * FROM users WHERE user_id = ?";
+    public function getCompanyById($id){
+        $query = "SELECT * FROM company WHERE company_id = ?";
         $stmt = $this->Conn->prepare($query);
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);

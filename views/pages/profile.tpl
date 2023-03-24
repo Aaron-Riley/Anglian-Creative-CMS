@@ -17,17 +17,27 @@
 
       <div id="profile" class="row mt-3 mb-5 text-white">
         <div class="col-lg-6">
-          <img src="https://github.com/mdo.png" class="mb-3" alt="Responsive image">
-          <h3>Patrick Spector</h3>
-          <p>Global Administrator</p>
+         {if $user_data.user_url}
+            <img src="{$user_data.user_url}" class="mb-3" alt="Responsive image">
+        {else}
+            <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+        {/if}
+          <h3>{$user_data.user_name}</h3>
+          <p>{$user_data.user_role}</p>
         </div>
         <div class="col-lg-6">
+        {if $company_data.company_url}
+          <img src="{$company_data.company_url}" class="mb-3" alt="Responsive image">
+      {else}
           <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
-          <h3>Anglian Creative</h3>
+      {/if}
+          <h3>{$company_data.company_name}</h3>
         </div>
         <div class="container">
           <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
           <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
+          <a href="index.php?p=editcompany" class="btn btn-secondary">Edit Company</a>
+
         </div>
       </div>
 {/block}

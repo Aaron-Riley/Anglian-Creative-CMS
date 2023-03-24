@@ -21,9 +21,9 @@ if (isset($_POST['submitProject'])) {
             $imageUrl = putObject($image_tmp, $image);
 
 
-            $sql = "INSERT INTO projects (title, content, user_name, image_url) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO projects (title, content, user_id, image_url) VALUES (?, ?, ?, ?)";
             $stmt = $Conn->prepare($sql);
-            $stmt->execute([$title, $content, $_SESSION['user_data']['user_name'], $imageUrl]);
+            $stmt->execute([$title, $content, $_SESSION['user_data']['user_id'], $imageUrl]);
 
             header('Location: index.php?p=projects');
         } else {

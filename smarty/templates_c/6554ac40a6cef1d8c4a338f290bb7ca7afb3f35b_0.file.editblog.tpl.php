@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-12 18:52:50
+/* Smarty version 4.3.0, created on 2023-03-17 15:46:08
   from 'C:\MAMP\htdocs\agcms\views\pages\editblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640e1f82931533_09705293',
+  'unifunc' => 'content_64148b40c801c0_03013274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6554ac40a6cef1d8c4a338f290bb7ca7afb3f35b' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editblog.tpl',
-      1 => 1678647168,
+      1 => 1679067966,
       2 => 'file',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640e1f82931533_09705293 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64148b40c801c0_03013274 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_83560614640e1f8292b823_26712020', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_41509271164148b40c7b088_50303824', "body");
 ?>
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_83560614640e1f8292b823_26712020 extends Smarty_Internal_Block
+class Block_41509271164148b40c7b088_50303824 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_83560614640e1f8292b823_26712020',
+    0 => 'Block_41509271164148b40c7b088_50303824',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -84,7 +84,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         <h2 class="mt-5 d-flex align-items-center"><?php echo $_smarty_tpl->tpl_vars['blogData']->value['title'];?>
 </h2>
 
-                        <div><?php echo $_smarty_tpl->tpl_vars['blogData']->value['content'];?>
+                        <div class="text-white"><?php echo $_smarty_tpl->tpl_vars['blogData']->value['content'];?>
 </div>
                     </div>
                 </div>
@@ -108,11 +108,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                             <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
                             <input type="file" name="image" class="form-control d-flex align-items-center"
                                 placeholder="Title">
+                                <input type="hidden" name="old_image" value="<?php echo $_smarty_tpl->tpl_vars['blogData']->value['image_url'];?>
+">
                             <div class="d-flex justify-content-start">
                                 <button type="submit" class="btn btn-primary mt-5 px-3 mr-2"
-                                    name="changeProject">Submit</button>
+                                    name="changeBlog">Submit</button>
                                 <button type="submit" class="btn btn-secondary mt-5 px-3"
-                                    name="deleteProject">Delete</button>
+                                    name="deleteBlog">Delete</button>
                             </div>
                         </div>
                     </form>

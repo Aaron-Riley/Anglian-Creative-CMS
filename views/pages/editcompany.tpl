@@ -13,33 +13,30 @@
 
     <div id="profile" class="row mt-3 mb-5 text-white">
     <div class="col-lg-6">
-    {if $user_data.user_url}
-        <img src="{$user_data.user_url}" class="mb-3" alt="Responsive image">
+    {if $company_data.company_url}
+        <img src="{$company_data.company_url}" class="mb-3" alt="Responsive image">
     {else}
-        <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+        <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
     {/if}
-      <h3>{$user_data.user_name}</h3>
-      <p>{$user_data.user_role}</p>
+        <h3>{$company_data.company_name}</h3>
     </div>
-
     <div class="container">
     <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-    {* <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a> *}
+    <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
     </div>
     </div>
     <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
-            <label for="user_name">Change name</label>
-            <input type="text" class="form-control" id="user_name" value="Aaron" name="name">
-        </div>
-        <div class="form-group mb-3">
-        <label for="user_name">Change role</label>
-        <input type="text" class="form-control" id="user_name" value="Global Administrator" name="role">
+        <label for="user_name">Change company name</label>
+        <input type="text" class="form-control" id="user_company" value="Anglian Creative" name="company">
     </div>
         <div class="form-group">
-            <label for="user_profile">Change profile picture</label>
-            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="profileUrl">
+            <label for="user_profile">Change company picture</label>
+            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="companyUrl">
         </div>
+
+        <input type="hidden" name="token" value="" name="old_profileUrl">
+        <input type="hidden" name="token" value="" name="old_companyUrl">
         <button type="submit" name="changeProfile" class="btn btn-primary mt-3 mb-5">Change details</button>
     </form>
   </div>

@@ -1,21 +1,21 @@
 <?php
 
 // get project info
-$Profile = new Profile($Conn);
+$Company = new Company($Conn);
 
 
 var_dump($_SESSION);
 
-$user_data  = $_SESSION['user_data'];
+$user_data  = $_SESSION['company_data'];
 
 // if($user_data['user_url'] == null){
 //     echo "in";
 //     $user_data['user_url'] = strtok($_SERVER["REQUEST_URI"], '?')."/images/placeholder.png";
 // }
 
-$smarty->assign("user_data", $user_data);
+$smarty->assign("company_data", $company_data);
 
-if (isset($_POST['changeProfile'])) {
+if (isset($_POST['changeCompany'])) {
     echo "in";
     try {
         $errors = [];

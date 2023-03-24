@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-10 21:29:05
+/* Smarty version 4.3.0, created on 2023-03-17 12:11:23
   from 'C:\MAMP\htdocs\agcms\views\pages\editprojects.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640ba1219fd230_09914992',
+  'unifunc' => 'content_641458eba02735_41797125',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27ed8ddd0eedd88065ef1019043a00333dd2a377' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprojects.tpl',
-      1 => 1678483742,
+      1 => 1679055078,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640ba1219fd230_09914992 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641458eba02735_41797125 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_53810925640ba1219ed5f6_27755601', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1777381490641458eb9e2c11_67410049', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_53810925640ba1219ed5f6_27755601 extends Smarty_Internal_Block
+class Block_1777381490641458eb9e2c11_67410049 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_53810925640ba1219ed5f6_27755601',
+    0 => 'Block_1777381490641458eb9e2c11_67410049',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -78,7 +78,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                         <h2 class="mt-5 d-flex align-items-center"><?php echo $_smarty_tpl->tpl_vars['projectData']->value['title'];?>
 </h2>
 
-                        <div><?php echo $_smarty_tpl->tpl_vars['projectData']->value['content'];?>
+                        <div class="text-white"><?php echo $_smarty_tpl->tpl_vars['projectData']->value['content'];?>
 </div>
                     </div>
                 </div>
@@ -102,6 +102,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                             <h3 class="mt-5 d-flex align-items-center text-white">Featured Image</h3>
                             <input type="file" name="image" class="form-control d-flex align-items-center"
                                 placeholder="Title">
+                                <input type="hidden" name="old_image" value="<?php echo $_smarty_tpl->tpl_vars['projectData']->value['image_url'];?>
+">
                             <div class="d-flex justify-content-start">
                                 <button type="submit" class="btn btn-primary mt-5 px-3 mr-2"
                                     name="changeProject">Submit</button>
