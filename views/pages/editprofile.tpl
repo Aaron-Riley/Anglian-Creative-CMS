@@ -22,23 +22,21 @@
       <p>{$user_data.user_role}</p>
     </div>
 
-    <div class="container">
-    <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-    {* <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a> *}
-    </div>
+ 
     </div>
     <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label for="user_name">Change name</label>
-            <input type="text" class="form-control" id="user_name" value="Aaron" name="name">
+            <input type="text" class="form-control" id="user_name" value="{$user_data.user_name}" name="name">
         </div>
         <div class="form-group mb-3">
         <label for="user_name">Change role</label>
-        <input type="text" class="form-control" id="user_name" value="Global Administrator" name="role">
+        <input type="text" class="form-control" id="user_name" value="{$user_data.user_role}" name="role">
     </div>
         <div class="form-group">
             <label for="user_profile">Change profile picture</label>
-            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="profileUrl">
+            <input type="file" class="form-control-file mt-3" value="{$user_data.user_url}" id="user_profile" name="profileUrl">
+            <input type="hidden" name="old_image" value="{$user_data.user_url}">
         </div>
         <button type="submit" name="changeProfile" class="btn btn-primary mt-3 mb-5">Change details</button>
     </form>

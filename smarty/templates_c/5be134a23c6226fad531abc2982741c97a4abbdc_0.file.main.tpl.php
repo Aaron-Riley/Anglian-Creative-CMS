@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 14:37:16
+/* Smarty version 4.3.0, created on 2023-03-26 20:14:35
   from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641db59c0de230_18702328',
+  'unifunc' => 'content_6420a7ab81c250_23322852',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5be134a23c6226fad531abc2982741c97a4abbdc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
-      1 => 1679668631,
+      1 => 1679861671,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641db59c0de230_18702328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6420a7ab81c250_23322852 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -92,11 +92,17 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <div class="inner-wrapper d-flex">
       <div id="sidebar" class="d-flex flex-column flex-md-shrink-0 flex-sm-column p-3">
         <a href="index.php?p=home" class="d-flex align-items-center text-decoration-none">
-          <img id="logo" src="./images/logo.svg" alt="" width="120" height="120" />
-        </a>
-        <span class="justify-content-center mx-auto">Anglian Creative</span>
+        <?php if ($_smarty_tpl->tpl_vars['company_data']->value['company_url']) {?>
+          <img id="logo" src="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
+" alt="" width="120" height="120" />
+          <?php } else { ?>
+          <img id="logo" src="./images/placeholder-logo.png" alt="" width="120" height="120" />
+          <?php }?>
+          </a>
+          <span class="justify-content-center mx-auto"><?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_name'];?>
+</span>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
+          <li class="nav-item profile">
             <a href="index.php?p=profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
               id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
               <?php if ($_smarty_tpl->tpl_vars['user_data']->value['user_url']) {?>
@@ -159,7 +165,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <hr />
       </div>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1070167460641db59c0db037_73620553', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7330421456420a7ab8181f0_81746650', "body");
 ?>
 
 
@@ -186,12 +192,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1070167460641db59c
 
 </html><?php }
 /* {block "body"} */
-class Block_1070167460641db59c0db037_73620553 extends Smarty_Internal_Block
+class Block_7330421456420a7ab8181f0_81746650 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1070167460641db59c0db037_73620553',
+    0 => 'Block_7330421456420a7ab8181f0_81746650',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

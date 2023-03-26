@@ -26,12 +26,7 @@
           <p>{$user_data.user_role}</p>
         </div>
         <div class="col-lg-6">
-        {if $company_data.company_url}
-          <img src="{$company_data.company_url}" class="mb-3" alt="Responsive image">
-      {else}
-          <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
-      {/if}
-          <h3>{$company_data.company_name}</h3>
+      
         </div>
         <div class="container">
           <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>

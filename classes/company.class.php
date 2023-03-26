@@ -18,11 +18,13 @@ class Company
         return $stmt->execute($data);
     }
     
-     
-    public function getCompanyById($id){
-        $query = "SELECT * FROM company WHERE company_id = ?";
+    public function getCompany()
+    {
+        $query = "SELECT * FROM sys";
         $stmt = $this->Conn->prepare($query);
-        $stmt->execute([$id]);
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
+        $stmt->execute();
+    return  $stmt->fetch(PDO::FETCH_ASSOC);
+
+    }  
 }
+

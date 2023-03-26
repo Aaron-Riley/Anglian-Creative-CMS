@@ -61,11 +61,15 @@
     <div class="inner-wrapper d-flex">
       <div id="sidebar" class="d-flex flex-column flex-md-shrink-0 flex-sm-column p-3">
         <a href="index.php?p=home" class="d-flex align-items-center text-decoration-none">
-          <img id="logo" src="./images/logo.svg" alt="" width="120" height="120" />
-        </a>
-        <span class="justify-content-center mx-auto">Anglian Creative</span>
+        {if $company_data.company_url}
+          <img id="logo" src="{$company_data.company_url}" alt="" width="120" height="120" />
+          {else}
+          <img id="logo" src="./images/placeholder-logo.png" alt="" width="120" height="120" />
+          {/if}
+          </a>
+          <span class="justify-content-center mx-auto">{$company_data.company_name}</span>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li class="nav-item">
+          <li class="nav-item profile">
             <a href="index.php?p=profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
               id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
               {if $user_data.user_url}

@@ -22,6 +22,8 @@ $smarty->setTemplateDir(__DIR__.'/../views')
 
 if($_SESSION['is_loggedin']) {
     $User = new User($Conn);
+    $Company = new Company($Conn);
     $active_user_data = $User->getUser($_SESSION['user_data']['user_id']);
     $smarty->assign('user_data', $active_user_data);
+    $smarty->assign('company_data', $Company->getCompany());
 }

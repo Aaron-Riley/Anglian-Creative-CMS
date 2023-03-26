@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 14:58:05
+/* Smarty version 4.3.0, created on 2023-03-26 21:01:58
   from 'C:\MAMP\htdocs\agcms\views\pages\editprofile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dba7d162c06_77063170',
+  'unifunc' => 'content_6420b2c6d0e684_57841986',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0b7a102f4c3f877aef46d6fcd3f2e19874461fc2' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editprofile.tpl',
-      1 => 1679669879,
+      1 => 1679864514,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dba7d162c06_77063170 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6420b2c6d0e684_57841986 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1810123986641dba7d159162_61382757', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4218548946420b2c6d052f4_68267179', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1810123986641dba7d159162_61382757 extends Smarty_Internal_Block
+class Block_4218548946420b2c6d052f4_68267179 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1810123986641dba7d159162_61382757',
+    0 => 'Block_4218548946420b2c6d052f4_68267179',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -66,22 +66,25 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 </p>
     </div>
 
-    <div class="container">
-    <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-        </div>
+ 
     </div>
     <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
             <label for="user_name">Change name</label>
-            <input type="text" class="form-control" id="user_name" value="Aaron" name="name">
+            <input type="text" class="form-control" id="user_name" value="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_name'];?>
+" name="name">
         </div>
         <div class="form-group mb-3">
         <label for="user_name">Change role</label>
-        <input type="text" class="form-control" id="user_name" value="Global Administrator" name="role">
+        <input type="text" class="form-control" id="user_name" value="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_role'];?>
+" name="role">
     </div>
         <div class="form-group">
             <label for="user_profile">Change profile picture</label>
-            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="profileUrl">
+            <input type="file" class="form-control-file mt-3" value="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
+" id="user_profile" name="profileUrl">
+            <input type="hidden" name="old_image" value="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
+">
         </div>
         <button type="submit" name="changeProfile" class="btn btn-primary mt-3 mb-5">Change details</button>
     </form>

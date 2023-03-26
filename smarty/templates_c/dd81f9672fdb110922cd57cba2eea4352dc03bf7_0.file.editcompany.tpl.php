@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-24 14:58:47
+/* Smarty version 4.3.0, created on 2023-03-26 20:58:10
   from 'C:\MAMP\htdocs\agcms\views\pages\editcompany.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_641dbaa7488199_18181778',
+  'unifunc' => 'content_6420b1e21fe542_74065618',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dd81f9672fdb110922cd57cba2eea4352dc03bf7' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\editcompany.tpl',
-      1 => 1679669924,
+      1 => 1679864287,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_641dbaa7488199_18181778 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6420b1e21fe542_74065618 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2075512668641dbaa7479bf0_40079954', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10029904666420b1e20323d2_81586762', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_2075512668641dbaa7479bf0_40079954 extends Smarty_Internal_Block
+class Block_10029904666420b1e20323d2_81586762 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_2075512668641dbaa7479bf0_40079954',
+    0 => 'Block_10029904666420b1e20323d2_81586762',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -58,29 +58,30 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         <img src="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
 " class="mb-3" alt="Responsive image">
     <?php } else { ?>
-        <img src="./images/logo-social.png" class="mb-3" alt="Responsive image">
+        <img src="./images/placeholder-logo.png" class="mb-3" alt="Responsive image">
     <?php }?>
         <h3><?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_name'];?>
 </h3>
     </div>
-    <div class="container">
-    <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-    <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
-    </div>
+
     </div>
     <form action="" method="post" class="form-light text-white" enctype="multipart/form-data">
         <div class="form-group mb-3">
         <label for="user_name">Change company name</label>
-        <input type="text" class="form-control" id="user_company" value="Anglian Creative" name="company">
+        <input type="text" class="form-control" id="user_company" value="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_name'];?>
+" name="company">
     </div>
         <div class="form-group">
             <label for="user_profile">Change company picture</label>
-            <input type="file" class="form-control-file mt-3" value="f82485933c273937127_251040530556837_7131760453107023571_n.jpg" id="user_profile" name="companyUrl">
+            <input type="file" class="form-control-file mt-3" value="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
+" id="user_profile" name="companyUrl">
+            <input type="hidden" name="old_image" value="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
+">
         </div>
-
+ 
         <input type="hidden" name="token" value="" name="old_profileUrl">
         <input type="hidden" name="token" value="" name="old_companyUrl">
-        <button type="submit" name="changeProfile" class="btn btn-primary mt-3 mb-5">Change details</button>
+        <button type="submit" name="changeCompany" class="btn btn-primary mt-3 mb-5">Change details</button>
     </form>
   </div>
 <?php
