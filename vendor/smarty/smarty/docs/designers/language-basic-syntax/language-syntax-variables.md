@@ -51,10 +51,10 @@ the \$dollar syntax and are instead referenced with surrounding
     {assign var=foo value=['y'=>'yellow','b'=>'blue']}
     {assign var=foo value=[1,[9,8],3]}   // can be nested
 
-    Short variable assignment:
+    Short variable agcms:
 
     {$foo=$bar+2}
-    {$foo = strlen($bar)}               // function in assignment
+    {$foo = strlen($bar)}               // function in agcms
     {$foo = myfunct( ($x+$y)*3 )}       // as function parameter 
     {$foo.bar=1}                        // assign to specific array element
     {$foo.bar.baz=1}                    

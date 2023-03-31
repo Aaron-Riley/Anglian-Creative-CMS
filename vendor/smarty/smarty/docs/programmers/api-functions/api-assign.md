@@ -74,7 +74,7 @@ These are accessed in the template with
     {$foo.no}, {$foo.label}
     {$contact.id}, {$contact.name},{$contact.email}
 
-To access more complex array assignments see
+To access more complex array agcmss see
 [`{foreach}`](#language.function.foreach) and
 [`{section}`](#language.function.section)
 

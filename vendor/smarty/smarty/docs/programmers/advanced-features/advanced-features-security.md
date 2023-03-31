@@ -2,20 +2,36 @@ Security {#advanced.features.security}
 ========
 
 Security is good for situations when you have untrusted parties editing
-the templates e.g. via ftp, and you want to reduce the risk of system
+the templates eg via ftp, and you want to reduce the risk of system
 security compromises through the template language.
 
 The settings of the security policy are defined by properties of an
 instance of the Smarty\_Security class. These are the possible settings:
 
+-   `$php_handling` determines how Smarty to handle PHP code embedded in
+    templates. Possible values are:
+
+    -   Smarty::PHP\_PASSTHRU -\> echo PHP tags as they are
+
+    -   Smarty::PHP\_QUOTE -\> escape tags as entities
+
+    -   Smarty::PHP\_REMOVE -\> remove php tags
+
+    -   Smarty::PHP\_ALLOW -\> execute php tags
+
+    The default value is Smarty::PHP\_PASSTHRU.
+
+    If security is enabled the [`$php_handling`](#variable.php.handling)
+    setting of the Smarty object is not checked for security.
+
 -   `$secure_dir` is an array of template directories that are
     considered secure. [`$template_dir`](#variable.template.dir)
-    considered secure implicitly. The default is an empty array.
+    concidered secure implicitly. The default is an empty array.
 
 -   `$trusted_dir` is an array of all directories that are considered
     trusted. Trusted directories are where you keep php scripts that are
     executed directly from the templates with
-    [`{insert}`](#language.function.insert.php). The default is an
+    [`{include_php}`](#language.function.include.php). The default is an
     empty array.
 
 -   `$trusted_uri` is an array of regular expressions matching URIs that
@@ -27,7 +43,7 @@ instance of the Smarty\_Security class. These are the possible settings:
     like authentication-tokens).
 
     The expression `'#https?://.*smarty.net$#i'` would allow accessing
-    the following URIs:
+    the follwing URIs:
 
     -   `http://smarty.net/foo`
 
@@ -94,8 +110,12 @@ instance of the Smarty\_Security class. These are the possible settings:
     super globals can be accessed by the template. The default is
     \"true\".
 
+-   `$allow_php_tag` is a boolean flag which controls if {php} and
+    {include\_php} tags can be used by the template. The default is
+    \"false\".
+
 If security is enabled, no private methods, functions or properties of
-static classes or assigned objects can be accessed (beginning with
+static classes or assigned objects can be accessed (beginningwith
 \'\_\') by the template.
 
 To customize the security policy settings you can extend the
@@ -108,6 +128,8 @@ Smarty\_Security class or create an instance of it.
     class My_Security_Policy extends Smarty_Security {
       // disable all PHP functions
       public $php_functions = null;
+      // remove PHP tags
+      public $php_handling = Smarty::PHP_REMOVE;
       // allow everthing as modifier
       public $php_modifiers = array();
     }
@@ -123,6 +145,8 @@ Smarty\_Security class or create an instance of it.
     $my_security_policy = new Smarty_Security($smarty);
     // disable all PHP functions
     $my_security_policy->php_functions = null;
+    // remove PHP tags
+    $my_security_policy->php_handling = Smarty::PHP_REMOVE;
     // allow everthing as modifier
     $my_security_policy->php_modifiers = array();
     // enable security
@@ -140,5 +164,5 @@ Smarty\_Security class or create an instance of it.
 > **Note**
 >
 > Most security policy settings are only checked when the template gets
-> compiled. For that reason you should delete all cached and compiled
+> compiled. For that reasion you should delete all cached and compiled
 > template files when you change your security settings.

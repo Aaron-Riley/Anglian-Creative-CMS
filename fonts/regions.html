@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/ca6562cb62.js" crossorigin="anonymous"></script>
+    <title>Locating fitness facilities you need | Fitness Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="map-page">
+    <header id=regions>
+        <div class="page-header-top container text-center text-md-start">
+            <a href="index.html"><img src="./images/logo.png" alt="Fitness Finder" /></a>
+        </div>
+        <nav id=regions class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="regions.html">Regions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login / Register</a>
+                        </li>
+                    </ul>
+                    <form action="gym.html" method="get" class="d-flex">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark ms-2" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 pe-0" id="map-location-list-container">
+                <div id="map-location-list" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-">
+                    <div
+                        class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                        <h3>Fitness Facility Finder</h3>
+                    </div>
+                    <div class="list-group list-group-flush border-bottom scrollarea">
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Essex Facilities</strong>
+                                <small>1.9 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Suffolk Facilities</strong>
+                                <small>4.7 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Hertfordshire Facilities</strong>
+                                <small>90 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">West Sussex Facilities</strong>
+                                <small>110 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">North Yorkshire Facilities</strong>
+                                <small>195 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Durham Facilities</strong>
+                                <small>267 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Cumbria Facilities</strong>
+                                <small>296 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+
+                        <a href="gym.html" class="list-group-item list-group-item-action py-3 lh-tight"
+                            aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <strong class="mb-1">Cornwall Facilities</strong>
+                                <small>360 miles</small>
+                            </div>
+                            <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and
+                                date.</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div id="map" class="d-none d-lg-block"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-center">
+        <div class="page-header-top container text-center text-md-start">
+            <a href="index.html"><img src="./images/logo.png" alt="Fitness Finder" /></a>
+        </div>
+        <nav class="navbar navbar-expand-lg mb-4">
+            <div class="container">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="login.html">Login / Register</a>
+                    </li>
+                </ul>
+                <p style="color: white;">&copy;Fitness Finder - Created for academic purposes</p>
+            </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="./js/scripts-vendors.min.js"></script>
+    <script src="./js/scripts.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcEKSrEiuHIncmEQmFTI_L7PyzWd4kB9M&callback=map.init&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>

@@ -28,7 +28,7 @@ reference.
 >
 > With the introduction of PHP5, `appendByRef()` is not necessary for
 > most intents and purposes. `appendByRef()` is useful if you want a PHP
-> array index value to be affected by its reassignment from a template.
+> array index value to be affected by its reagcms from a template.
 > Assigned object properties behave this way by default.
 
 NOTE.PARAMETER.MERGE

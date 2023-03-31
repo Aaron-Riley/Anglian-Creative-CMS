@@ -24,7 +24,7 @@ reference.
 >
 > With the introduction of PHP5, `assignByRef()` is not necessary for
 > most intents and purposes. `assignByRef()` is useful if you want a PHP
-> array index value to be affected by its reassignment from a template.
+> array index value to be affected by its reagcms from a template.
 > Assigned object properties behave this way by default.
 
 

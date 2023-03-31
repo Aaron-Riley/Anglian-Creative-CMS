@@ -1,7 +1,6 @@
 {extends file="layouts/mainlogin.tpl"}
 {block name="body"}
-    <body id="login">
-    <div class="login-box">
+  <div class="login-box">
         <h2>Login</h2>
 
         {if isset($error)}

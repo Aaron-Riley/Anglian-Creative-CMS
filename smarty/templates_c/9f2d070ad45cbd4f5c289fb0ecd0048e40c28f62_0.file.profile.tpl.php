@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 18:28:32
+/* Smarty version 4.0.4, created on 2023-03-31 22:28:55
   from 'C:\MAMP\htdocs\agcms\views\pages\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.3.0',
-  'unifunc' => 'content_64208ed0068851_76742590',
+  'version' => '4.0.4',
+  'unifunc' => 'content_64275ea7373639_25741503',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f2d070ad45cbd4f5c289fb0ecd0048e40c28f62' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\profile.tpl',
-      1 => 1679855305,
+      1 => 1680301706,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64208ed0068851_76742590 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64275ea7373639_25741503 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_169138221564208ed005f1b8_37677812', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_157847489664275ea735eac2_98710985', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_169138221564208ed005f1b8_37677812 extends Smarty_Internal_Block
+class Block_157847489664275ea735eac2_98710985 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_169138221564208ed005f1b8_37677812',
+    0 => 'Block_157847489664275ea735eac2_98710985',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="container">
       <div class="d-flex justify-content-start">
         <h1 class="d-flex align-items-center mt-3">
-          <a href="index.php?p=profile" class="text-decoration-none text-white">
+          <a href="/agcms/profile" class="text-decoration-none text-white">
             <svg class="mr-3" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
@@ -62,7 +62,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <img src="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
 " class="mb-3" alt="Responsive image">
         <?php } else { ?>
-            <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+            <img src="/agcms/images/placeholder.png" class="mb-3" alt="Responsive image">
         <?php }?>
           <h3><?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_name'];?>
 </h3>
@@ -73,9 +73,9 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
       
         </div>
         <div class="container">
-          <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-          <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
-          <a href="index.php?p=editcompany" class="btn btn-secondary">Edit Company</a>
+          <a href="/agcms/changepassword" class="btn btn-primary">Change Password</a>
+          <a href="/agcms/editprofile" class="btn btn-secondary">Edit Profile</a>
+          <a href="/agcms/editcompany" class="btn btn-secondary">Edit Company</a>
 
         </div>
       </div>

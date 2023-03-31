@@ -5,4 +5,4 @@
 array of all directories that are considered trusted. Trusted
 directories are where you keep php scripts that are executed directly
 from the templates with
-[`{insert}`](#language.function.insert.php).
+[`{include_php}`](#language.function.include.php).

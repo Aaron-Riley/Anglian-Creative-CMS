@@ -4,7 +4,7 @@
     <div class="container">
       <div class="d-flex justify-content-start">
         <h1 class="d-flex align-items-center mt-3">
-          <a href="index.php?p=profile" class="text-decoration-none text-white">
+          <a href="/agcms/profile" class="text-decoration-none text-white">
             <svg class="mr-3" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
               <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
               <path
@@ -20,7 +20,7 @@
          {if $user_data.user_url}
             <img src="{$user_data.user_url}" class="mb-3" alt="Responsive image">
         {else}
-            <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+            <img src="/agcms/images/placeholder.png" class="mb-3" alt="Responsive image">
         {/if}
           <h3>{$user_data.user_name}</h3>
           <p>{$user_data.user_role}</p>
@@ -29,9 +29,9 @@
       
         </div>
         <div class="container">
-          <a href="index.php?p=changepassword" class="btn btn-primary">Change Password</a>
-          <a href="index.php?p=editprofile" class="btn btn-secondary">Edit Profile</a>
-          <a href="index.php?p=editcompany" class="btn btn-secondary">Edit Company</a>
+          <a href="/agcms/changepassword" class="btn btn-primary">Change Password</a>
+          <a href="/agcms/editprofile" class="btn btn-secondary">Edit Profile</a>
+          <a href="/agcms/editcompany" class="btn btn-secondary">Edit Company</a>
 
         </div>
       </div>

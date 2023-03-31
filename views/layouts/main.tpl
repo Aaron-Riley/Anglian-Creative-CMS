@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CMS</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/agcms/css/styles.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -34,16 +34,16 @@
           {if $user_data.user_url}
             <img src="{$user_data.user_url}" alt="" width="32" height="32" class="rounded-circle mt-1" />
           {else}
-            <img src="./images/placeholder.png" alt="" width="32" height="32" class="rounded-circle mt-1" />
+            <img src="/agcms/images/placeholder.png" alt="" width="32" height="32" class="rounded-circle mt-1" />
           {/if}
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">{$user_data.user_name}</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item text-dark border-bottom" href="index.php?p=profile">Profile</a>
+                  <a class="dropdown-item text-dark border-bottom" href="/agcms/profile">Profile</a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-dark" href="index.php?p=login">Sign Out</a>
+                  <a class="dropdown-item text-dark" href="/agcms/logout">Sign Out</a>
                 </li>
               </ul>
             </li>
@@ -60,22 +60,22 @@
     </nav>
     <div class="inner-wrapper d-flex">
       <div id="sidebar" class="d-flex flex-column flex-md-shrink-0 flex-sm-column p-3">
-        <a href="index.php?p=home" class="d-flex align-items-center text-decoration-none">
+        <a href="/agcms/dashboard" class="d-flex align-items-center text-decoration-none">
         {if $company_data.company_url}
           <img id="logo" src="{$company_data.company_url}" alt="" width="120" height="120" />
           {else}
-          <img id="logo" src="./images/placeholder-logo.png" alt="" width="120" height="120" />
+          <img id="logo" src="/agcms/images/placeholder-logo.png" alt="" width="120" height="120" />
           {/if}
           </a>
           <span class="justify-content-center mx-auto">{$company_data.company_name}</span>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item profile">
-            <a href="index.php?p=profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
+            <a href="/agcms/profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
               id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
               {if $user_data.user_url}
                 <img src="{$user_data.user_url}" class="mb-3" alt="Responsive image">
               {else}
-                <img src="./images/placeholder.png" alt="" width="50" height="50" class="rounded-circle me-4 mx-4 mb-3" />
+                <img src="/agcms/images/placeholder.png" alt="" width="50" height="50" class="rounded-circle me-4 mx-4 mb-3" />
               {/if}
               <div class="d-block align-left">
                 <p class="pb-0 mb-0">{$user_data.user_name}</p>
@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="index.php?p=home"
+            <a href="/agcms/dashboard"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Dashboard<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512">
                 <path
@@ -93,7 +93,7 @@
             </a>
           </li>
           <li>
-            <a href="index.php?p=blog"
+            <a href="/agcms/blog"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Blog<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512">
                 <path
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li>
-            <a href="index.php?p=projects"
+            <a href="/agcms/projects"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Projects<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
                 <path
@@ -113,7 +113,7 @@
           {if $is_loggedin}
             {if $user_data['user_role'] === 'Global Administrator'}
               <li>
-                <a href="index.php?p=user"
+                <a href="/agcms/user"
                   class="nav-link link-light d-flex align-center justify-content-between mb-3">Users<svg
                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
                     <path

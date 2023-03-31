@@ -1183,7 +1183,7 @@ scond(res)  ::= SINGLECOND(o). {
 }
 
 //
-// ARRAY element assignment
+// ARRAY element agcms
 //
 arraydef(res)           ::=  OPENB arrayelements(a) CLOSEB.  {
     res = 'array('.a.')';

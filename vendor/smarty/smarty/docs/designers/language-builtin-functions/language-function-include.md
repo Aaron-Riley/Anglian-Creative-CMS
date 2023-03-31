@@ -131,7 +131,7 @@ cache lifetime of 500 seconds.
       
 
 In this example included template will be cached independent of the
-global caching setting.
+global cahing setting.
 
 
     {include 'sub_template.tpl' caching}
@@ -188,5 +188,7 @@ current template.
 
       
 
-See also [`{insert}`](#language.function.insert), [template resources](#resources) and
+See also [`{include_php}`](#language.function.include.php),
+[`{insert}`](#language.function.insert),
+[`{php}`](#language.function.php), [template resources](#resources) and
 [componentized templates](#tips.componentized.templates).

@@ -10,7 +10,7 @@ void
 testInstall
 
 This function verifies that all required working folders of the Smarty
-installation can be accessed. It does output a corresponding protocol.
+installation can be accessed. It does output a corresponding protocoll.
 
 
     <?php

@@ -6,66 +6,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [4.3.0] - 2022-11-22
-
-### Added
-- PHP8.2 compatibility [#775](https://github.com/smarty-php/smarty/pull/775)
-
-### Changed
-- Include docs and demo in the releases [#799](https://github.com/smarty-php/smarty/issues/799)
-- Using PHP functions as modifiers now triggers a deprecation notice because we will drop support for this in the next major release [#813](https://github.com/smarty-php/smarty/issues/813) 
--  Dropped remaining references to removed PHP-support in Smarty 4 from docs, lexer and security class. [#816](https://github.com/smarty-php/smarty/issues/816)
-- Support umask when writing (template) files and set dir permissions to 777 [#548](https://github.com/smarty-php/smarty/issues/548) [#819](https://github.com/smarty-php/smarty/issues/819) 
- 
-### Fixed
-- Output buffer is now cleaned for internal PHP errors as well, not just for Exceptions [#514](https://github.com/smarty-php/smarty/issues/514)
-- Fixed recursion and out of memory errors when caching in complicated template set-ups using inheritance and includes [#801](https://github.com/smarty-php/smarty/pull/801)
-- Fixed PHP8.1 deprecation errors in strip_tags 
-- Fix Variable Usage in Exception message when unable to load subtemplate [#808](https://github.com/smarty-php/smarty/pull/808)
-- Fixed PHP8.1 deprecation notices for strftime [#672](https://github.com/smarty-php/smarty/issues/672)
-- Fixed PHP8.1 deprecation errors passing null to parameter in trim [#807](https://github.com/smarty-php/smarty/pull/807)
-- Adapt Smarty upper/lower functions to be codesafe (e.g. for Turkish locale) [#586](https://github.com/smarty-php/smarty/pull/586)
-- Bug fix for underscore and limited length in template name in custom resources [#581](https://github.com/smarty-php/smarty/pull/581)
-
-
-## [4.2.1] - 2022-09-14
-
-### Security
-- Applied appropriate javascript and html escaping in mailto plugin to counter injection attacks [#454](https://github.com/smarty-php/smarty/issues/454)
-
-### Fixed
-- Fixed PHP8.1 deprecation notices in modifiers (upper, explode, number_format and replace) [#755](https://github.com/smarty-php/smarty/pull/755) and [#788](https://github.com/smarty-php/smarty/pull/788)
-- Fixed PHP8.1 deprecation notices in capitalize modifier [#789](https://github.com/smarty-php/smarty/issues/789)
-- Fixed use of `rand()` without a parameter in math function [#794](https://github.com/smarty-php/smarty/issues/794)
-- Fixed unselected year/month/day not working in html_select_date [#395](https://github.com/smarty-php/smarty/issues/395)
-
-## [4.2.0] - 2022-08-01
-
-### Fixed
-- Fixed problems with smarty_mb_str_replace [#549](https://github.com/smarty-php/smarty/issues/549)
-- Fixed second parameter of unescape modifier not working [#777](https://github.com/smarty-php/smarty/issues/777)
-
-### Changed
-- Updated HTML of the debug template [#599](https://github.com/smarty-php/smarty/pull/599)
-
-## [4.1.1] - 2022-05-17
-
-### Security
-- Prevent PHP injection through malicious block name or include file name. This addresses CVE-2022-29221
-
-### Fixed
-- Exclude docs and demo from export and composer [#751](https://github.com/smarty-php/smarty/pull/751)
-- PHP 8.1 deprecation notices in demo/plugins/cacheresource.pdo.php [#706](https://github.com/smarty-php/smarty/issues/706)
-- PHP 8.1 deprecation notices in truncate modifier [#699](https://github.com/smarty-php/smarty/issues/699)
-- Math equation `max(x, y)` didn't work anymore [#721](https://github.com/smarty-php/smarty/issues/721)
-- Fix PHP 8.1 deprecated warning when calling rtrim [#743](https://github.com/smarty-php/smarty/pull/743)
-- PHP 8.1: fix deprecation in escape modifier [#727](https://github.com/smarty-php/smarty/pull/727)
-
-## [4.1.0] - 2022-02-06
-
-### Added
-- PHP8.1 compatibility [#713](https://github.com/smarty-php/smarty/pull/713)
-
 ## [4.0.4] - 2022-01-18
 
 ### Fixed
@@ -2199,7 +2139,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -bugfix removed memory leak while processing compileAllTemplates
 
 12/01/2011
-- bugfix in {if} and {while} tag compiler when using assignments as condition and nocache mode
+- bugfix in {if} and {while} tag compiler when using agcmss as condition and nocache mode
 
 10/01/2011
 - bugfix when using {$smarty.block.child} and name of {block} was in double quoted string
@@ -2226,7 +2166,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - bugfix added missing support of $cache_attrs for registered plugins
 
 15/12/2010
-- bugfix assignment as condition in {while} did drop an E_NOTICE
+- bugfix agcms as condition in {while} did drop an E_NOTICE
 
 14/12/2010
 - bugfix when passing an array as default parameter at {function} tag
@@ -2260,7 +2200,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 24/11/2011
 -bugfix on parser at  !$foo|modifier
--change parser logic when assignments used as condition in {if] and {while} to allow assign to array element
+-change parser logic when agcmss used as condition in {if] and {while} to allow assign to array element
 
 23/11/2011
 -bugfix allow integer as attribute name in plugin calls
@@ -3320,7 +3260,7 @@ NOTICE: existing compiled template and cache files must be deleted
 
 04/05/2009
 - replaced new array looping syntax {for $foo in $array} with {foreach $foo in $array} to avoid confusion
-- added append array for short form of assign  {$foo[]='bar'} and allow assignments to nested arrays {$foo['bla']['blue']='bar'}
+- added append array for short form of assign  {$foo[]='bar'} and allow agcmss to nested arrays {$foo['bla']['blue']='bar'}
 
 04/04/2009
 - make output of template default handlers cachable and save compiled source

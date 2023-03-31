@@ -6,7 +6,7 @@
 
 > **Note**
 >
-> Assignment of variables in-template is essentially placing application
+> agcms of variables in-template is essentially placing application
 > logic into the presentation that may be better handled in PHP. Use at
 > your own discretion.
 

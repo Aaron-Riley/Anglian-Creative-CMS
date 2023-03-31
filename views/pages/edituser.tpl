@@ -4,7 +4,7 @@
     <div class="container">
     <div class="d-flex justify-content-start">
     <h1 class="d-flex align-items-center mt-3">
-    <a href="index.php?p=user" class="text-decoration-none text-white">
+    <a href="/agcms/user" class="text-decoration-none text-white">
     <svg class="mr-3" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
       <path
@@ -20,7 +20,7 @@
     {if $edit_user_data.user_url}
         <img src="{$edit_user_data.user_url}" class="mb-3" alt="Responsive image">
     {else}
-        <img src="./images/placeholder.png" class="mb-3" alt="Responsive image">
+        <img src="/agcms/images/placeholder.png" class="mb-3" alt="Responsive image">
     {/if}
       <h3>{$edit_user_data.user_name}</h3>
       <p>{$edit_user_data.user_role}</p>
@@ -34,8 +34,14 @@
             <input type="text" class="form-control" id="user_name" value="{$edit_user_data.user_name}" name="name">
         </div>
         <div class="form-group mb-3">
-        <label for="user_name">Change role</label>
-        <input type="text" class="form-control" id="user_name" value="{$edit_user_data.user_role}" name="role">
+        <h3 class="mt-5 d-flex align-items-center text-white">Role</h3>
+     
+
+        <select name="role">
+          <option value="Global Administrator">Global Administrator</option>
+          <option value="Developer">Developer</option>
+          <option value="Creator">Creator</option>
+        </select>
     </div>
         <div class="form-group">
             <label for="user_profile">Change user picture</label>

@@ -55,7 +55,7 @@ Be sure to pass the same `$cache_id` as the second parameter to
     $my_cache_id = $_GET['article_id'];
 
     if(!$smarty->isCached('index.tpl',$my_cache_id)) {
-        // No cache available, do variable assignments here.
+        // No cache available, do variable agcmss here.
         $contents = get_database_contents();
         $smarty->assign($contents);
     }

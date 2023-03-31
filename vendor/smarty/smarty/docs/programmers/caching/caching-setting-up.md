@@ -107,7 +107,7 @@ process.
     $smarty->setCaching(Smarty::CACHING_LIFETIME_CURRENT);
 
     if(!$smarty->isCached('index.tpl')) {
-        // No cache available, do variable assignments here.
+        // No cache available, do variable agcmss here.
         $contents = get_database_contents();
         $smarty->assign($contents);
     }

@@ -1,0 +1,27 @@
+body.map-page {
+    #map{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #map-location-list-container {
+        #map-location-list {
+            width: 100%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        a {
+            &.active,
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $secondary-color;
+                color: #333
+                
+            }
+        } 
+    }
+}

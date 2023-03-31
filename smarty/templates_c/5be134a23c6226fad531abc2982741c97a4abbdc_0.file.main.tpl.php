@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-26 20:14:35
+/* Smarty version 4.0.4, created on 2023-03-31 22:28:55
   from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.3.0',
-  'unifunc' => 'content_6420a7ab81c250_23322852',
+  'version' => '4.0.4',
+  'unifunc' => 'content_64275ea7506a70_40688442',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5be134a23c6226fad531abc2982741c97a4abbdc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
-      1 => 1679861671,
+      1 => 1680301706,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6420a7ab81c250_23322852 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64275ea7506a70_40688442 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -32,7 +32,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CMS</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/agcms/css/styles.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
@@ -64,17 +64,17 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             <img src="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
 " alt="" width="32" height="32" class="rounded-circle mt-1" />
           <?php } else { ?>
-            <img src="./images/placeholder.png" alt="" width="32" height="32" class="rounded-circle mt-1" />
+            <img src="/agcms/images/placeholder.png" alt="" width="32" height="32" class="rounded-circle mt-1" />
           <?php }?>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_name'];?>
 </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item text-dark border-bottom" href="index.php?p=profile">Profile</a>
+                  <a class="dropdown-item text-dark border-bottom" href="/agcms/profile">Profile</a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-dark" href="index.php?p=login">Sign Out</a>
+                  <a class="dropdown-item text-dark" href="/agcms/logout">Sign Out</a>
                 </li>
               </ul>
             </li>
@@ -91,25 +91,25 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     </nav>
     <div class="inner-wrapper d-flex">
       <div id="sidebar" class="d-flex flex-column flex-md-shrink-0 flex-sm-column p-3">
-        <a href="index.php?p=home" class="d-flex align-items-center text-decoration-none">
+        <a href="/agcms/dashboard" class="d-flex align-items-center text-decoration-none">
         <?php if ($_smarty_tpl->tpl_vars['company_data']->value['company_url']) {?>
           <img id="logo" src="<?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_url'];?>
 " alt="" width="120" height="120" />
           <?php } else { ?>
-          <img id="logo" src="./images/placeholder-logo.png" alt="" width="120" height="120" />
+          <img id="logo" src="/agcms/images/placeholder-logo.png" alt="" width="120" height="120" />
           <?php }?>
           </a>
           <span class="justify-content-center mx-auto"><?php echo $_smarty_tpl->tpl_vars['company_data']->value['company_name'];?>
 </span>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item profile">
-            <a href="index.php?p=profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
+            <a href="/agcms/profile" class="d-flex align-items-center link-dark text-decoration-none mt-5 mb-3"
               id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
               <?php if ($_smarty_tpl->tpl_vars['user_data']->value['user_url']) {?>
                 <img src="<?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_url'];?>
 " class="mb-3" alt="Responsive image">
               <?php } else { ?>
-                <img src="./images/placeholder.png" alt="" width="50" height="50" class="rounded-circle me-4 mx-4 mb-3" />
+                <img src="/agcms/images/placeholder.png" alt="" width="50" height="50" class="rounded-circle me-4 mx-4 mb-3" />
               <?php }?>
               <div class="d-block align-left">
                 <p class="pb-0 mb-0"><?php echo $_smarty_tpl->tpl_vars['user_data']->value['user_name'];?>
@@ -120,7 +120,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </a>
           </li>
           <li class="nav-item">
-            <a href="index.php?p=home"
+            <a href="/agcms/dashboard"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Dashboard<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512">
                 <path
@@ -129,7 +129,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </a>
           </li>
           <li>
-            <a href="index.php?p=blog"
+            <a href="/agcms/blog"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Blog<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 576 512">
                 <path
@@ -138,7 +138,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
             </a>
           </li>
           <li>
-            <a href="index.php?p=projects"
+            <a href="/agcms/projects"
               class="nav-link link-light d-flex align-center justify-content-between mb-3">Projects<svg
                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
                 <path
@@ -149,7 +149,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
           <?php if ($_smarty_tpl->tpl_vars['is_loggedin']->value) {?>
             <?php if ($_smarty_tpl->tpl_vars['user_data']->value['user_role'] === 'Global Administrator') {?>
               <li>
-                <a href="index.php?p=user"
+                <a href="/agcms/user"
                   class="nav-link link-light d-flex align-center justify-content-between mb-3">Users<svg
                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 640 512">
                     <path
@@ -165,7 +165,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <hr />
       </div>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7330421456420a7ab8181f0_81746650', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58748206964275ea7503f25_84460815', "body");
 ?>
 
 
@@ -192,12 +192,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7330421456420a7ab8
 
 </html><?php }
 /* {block "body"} */
-class Block_7330421456420a7ab8181f0_81746650 extends Smarty_Internal_Block
+class Block_58748206964275ea7503f25_84460815 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_7330421456420a7ab8181f0_81746650',
+    0 => 'Block_58748206964275ea7503f25_84460815',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

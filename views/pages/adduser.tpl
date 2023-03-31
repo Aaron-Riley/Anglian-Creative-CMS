@@ -5,7 +5,7 @@
   
     <div class="d-flex justify-content-start">
       <h1 class="d-flex align-items-center mt-3">
-        <a href="index.php?p=user" class="text-decoration-none text-white">
+        <a href="/agcms/user" class="text-decoration-none text-white">
           <svg class="mr-3" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path

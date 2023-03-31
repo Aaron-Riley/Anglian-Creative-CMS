@@ -1,0 +1,1 @@
+- (As agreed with tutor) Lng/Lat of Google Map pointer and position will be applied via PHP on the selection of a facility.

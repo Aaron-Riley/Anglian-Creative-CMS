@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-02-21 11:02:53
+/* Smarty version 4.0.4, created on 2023-03-31 22:28:45
   from 'C:\MAMP\htdocs\agcms\views\layouts\mainlogin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.3.0',
-  'unifunc' => 'content_63f4a4ddc744b0_34226097',
+  'version' => '4.0.4',
+  'unifunc' => 'content_64275e9d0584c0_31718820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9287006ecef0adb027a2744907d80aa2618792b5' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\mainlogin.tpl',
-      1 => 1676977371,
+      1 => 1680301706,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63f4a4ddc744b0_34226097 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64275e9d0584c0_31718820 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,8 +30,8 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Login Bithch</title>
+    <link rel="stylesheet" href="/agcms/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -52,7 +52,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
   </head>
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58757193663f4a4ddc73f38_82006388', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_71120040264275e9d0579d3_91307800', "body");
 ?>
 
 
@@ -70,12 +70,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58757193663f4a4ddc
 </html>
 <?php }
 /* {block "body"} */
-class Block_58757193663f4a4ddc73f38_82006388 extends Smarty_Internal_Block
+class Block_71120040264275e9d0579d3_91307800 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_58757193663f4a4ddc73f38_82006388',
+    0 => 'Block_71120040264275e9d0579d3_91307800',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

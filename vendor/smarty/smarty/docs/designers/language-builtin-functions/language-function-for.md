@@ -2,7 +2,7 @@
 =====
 
 The `{for}{forelse}` tag is used to create simple loops. The following
-different formats are supported:
+different formarts are supported:
 
 -   `{for $var=$start to $end}` simple loop with step size of 1.
 

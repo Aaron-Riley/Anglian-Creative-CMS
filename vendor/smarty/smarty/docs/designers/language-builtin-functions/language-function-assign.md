@@ -6,7 +6,7 @@ execution of a template**.
 
 > **Note**
 >
-> Assignment of variables in-template is essentially placing application
+> agcms of variables in-template is essentially placing application
 > logic into the presentation that may be better handled in PHP. Use at
 > your own discretion.
 
@@ -135,6 +135,7 @@ The following functions can also *optionally* assign template variables.
 
 [`{capture}`](#language.function.capture),
 [`{include}`](#language.function.include),
+[`{include_php}`](#language.function.include.php),
 [`{insert}`](#language.function.insert),
 [`{counter}`](#language.function.counter),
 [`{cycle}`](#language.function.cycle),

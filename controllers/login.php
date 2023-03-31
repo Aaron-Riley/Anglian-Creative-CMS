@@ -20,14 +20,18 @@ if ($_POST) {
 
             $user_data = $User->loginUser($_POST['email'], $_POST['password']);
             if ($user_data) {
-                echo "in";
+
+
+        
                 $_SESSION['is_loggedin'] = true;
                 $_SESSION['user_data'] = $user_data;
 
                 // get company data and add it to a comapny_data session
                 $Company = new Company($Conn);
                 $_SESSION['company_data'] = $Company->getCompany();
-                header("Location: index.php?p=profile");
+                $smarty->assign('company_data', $_SESSION['company_data']);
+                var_dump($_SESSION['company_data']);
+                header("Location: /agcms/profile");
                 exit();
             } else {
                 $smarty->assign('error', "Incorrect Email/Password");

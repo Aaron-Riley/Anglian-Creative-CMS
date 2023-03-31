@@ -18,7 +18,7 @@
       </h1>
   </div>
   <div class="container mt-4">
-    <a href="index.php?p=addproject">
+    <a href="/agcms/addproject">
       <button type="button" class="btn btn-primary px-3">Add</button>
     </a>
   </div>
@@ -26,7 +26,7 @@
     <div class="row mb-2 mt-3">
     {foreach from=$projects item=project}
       <div class="col-md-6">
-      <a style="text-decoration: none;" href="index.php?p=editprojects&id={$project.project_id}">
+      <a style="text-decoration: none;" href="/agcms/editprojects/{$project.project_id}">
       <div class="card flex-md-row mb-4 box-shadow h-md-250">
       <div class="card-body d-flex flex-column align-items-start">
       <h3 class="mb-0">
