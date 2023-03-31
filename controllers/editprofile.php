@@ -48,7 +48,7 @@ if (isset($_POST['changeProfile'])) {
             $sql = "UPDATE users SET user_name = :user_name, user_role = :user_role, user_url = :user_url WHERE user_id = :user_id";
             $stmt = $Conn->prepare($sql);
             $stmt->execute([
-                    ':user_name' => $name,
+                ':user_name' => $name,
                 ':user_role' => $role,
                 ':user_url' => $imageUrl,    
                 ':user_id' => $user_data['user_id']

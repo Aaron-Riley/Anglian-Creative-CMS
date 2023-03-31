@@ -82,4 +82,18 @@ class User
 
         return true;
     }
+
+    public function getUserById($id){
+        $query = "SELECT * FROM users WHERE user_id = ?";
+        $stmt = $this->Conn->prepare($query);
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function getAllUsers() {
+        $query = "SELECT * FROM users";
+        $stmt = $this->Conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

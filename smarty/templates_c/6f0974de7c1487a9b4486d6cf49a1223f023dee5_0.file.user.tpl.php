@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-03-12 19:01:46
+/* Smarty version 4.3.0, created on 2023-03-31 16:45:49
   from 'C:\MAMP\htdocs\agcms\views\pages\user.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_640e219a296aa3_92715254',
+  'unifunc' => 'content_64270e3d4dd9e0_20682972',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6f0974de7c1487a9b4486d6cf49a1223f023dee5' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\user.tpl',
-      1 => 1678647700,
+      1 => 1680281146,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_640e219a296aa3_92715254 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64270e3d4dd9e0_20682972 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_690916082640e219a295043_56872443', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_30113039864270e3d4c9286_38406037', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_690916082640e219a295043_56872443 extends Smarty_Internal_Block
+class Block_30113039864270e3d4c9286_38406037 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_690916082640e219a295043_56872443',
+    0 => 'Block_30113039864270e3d4c9286_38406037',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -64,60 +64,41 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <thead class="thead">
             <tr>
               <th scope="col">#</th>
+              <th scope="col"></th>
               <th scope="col">Name</th>
-              <th scope="col">Date Created</th>
+              <th scope="col">Email</th>
               <th scope="col">Role</th>
-              <th scope="col">Status</th>
-              <th scope="col">Posts</th>
-              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
+            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['users']->value, 'user');
+$_smarty_tpl->tpl_vars['user']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['user']->value) {
+$_smarty_tpl->tpl_vars['user']->do_else = false;
+?>
             <tr>
-              <th scope="row">1</th>
-              <td><img src="https://github.com/mdo.png">John Smith</td>
-              <td>21st Jan 2023</td>
-              <td>Administrator</td>
-              <td>Active</td>
-              <td>12</td>
-              <td><a href="index.php?p=edituser"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
+              <th scope="row"><?php echo $_smarty_tpl->tpl_vars['user']->value['user_id'];?>
+</th>
+              <?php if ($_smarty_tpl->tpl_vars['user']->value['user_url']) {?>
+              <td><img src="<?php echo $_smarty_tpl->tpl_vars['user']->value['user_url'];?>
+"></td>
+              <?php } else { ?>
+                <td><img src="./images/placeholder.png"></td>
+              <?php }?>
+              <td><?php echo $_smarty_tpl->tpl_vars['user']->value['user_name'];?>
+</td>
+              <td><?php echo $_smarty_tpl->tpl_vars['user']->value['user_email'];?>
+</td>
+              <td><?php echo $_smarty_tpl->tpl_vars['user']->value['user_role'];?>
+</td>
+              <td><a href="index.php?p=edituser&id=<?php echo $_smarty_tpl->tpl_vars['user']->value['user_id'];?>
+"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
             </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><img src="https://github.com/mdo.png">John Smith</td>
-              <td>21st Jan 2023</td>
-              <td>Developer</td>
-              <td>Inactive</td>
-              <td>4</td>
-              <td><a href="index.php?p=edituser"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
-              </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><img src="https://github.com/mdo.png">John Smith</td>
-              <td>21st Jan 2023</td>
-              <td>Creator</td>
-              <td>Suspended</td>
-              <td>45</td>
-              <td><a href="index.php?p=edituser"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
-              </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><img src="https://github.com/mdo.png">John Smith</td>
-              <td>21st Jan 2023</td>
-              <td>Creator</td>
-              <td>Inactive</td>
-              <td>31</td>
-              <td><a href="index.php?p=edituser"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td><img src="https://github.com/mdo.png">John Smith</td>
-              <td>21st Jan 2023</td>
-              <td>Developer</td>
-              <td>Active</td>
-              <td>8</td>
-              <td><a href="index.php?p=edituser"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"/></svg></a>
-              </tbody>
+            <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+         </tbody>
         </table>
       </div>
     </div>

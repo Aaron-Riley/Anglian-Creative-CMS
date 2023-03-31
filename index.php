@@ -6,14 +6,14 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL & ~E_NOTICE);
 
 if($_SESSION['is_loggedin']) {
-    $smarty->assign('user_data', $_SESSION['user_data']);#
+    $smarty->assign('user_data', $_SESSION['user_data'], 'comapny_data', $_SESSION['company_data']);#
     $smarty->assign('is_loggedin', true);
 }
 
 
 if(isset($_GET['p'])) {
     //Add profile to secure pages once design is complete
-    $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user', 'editprofile', 'profile');
+    $secure_pages = array('home', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user', 'editprofile', 'profile', 'editcompany');
 
     if(in_array($_GET['p'], $secure_pages)) {
         if(!($_SESSION['is_loggedin'])) {
