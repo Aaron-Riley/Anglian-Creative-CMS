@@ -66,15 +66,15 @@
                   </button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"
+                    <!--Brand--><a class="brand" href="/agcms/home"
                       ><img
                         class="brand-logo-dark"
-                        src="images/logo-default-362x90.png"
+                        src="images/logo-white.png"
                         alt=""
                         width="181"
                         height="45" /><img
                         class="brand-logo-light"
-                        src="images/logo-inverse-362x90.png"
+                        src="images/logo-white.png"
                         alt=""
                         width="181"
                         height="45"
@@ -85,62 +85,18 @@
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#about">About</a>
+                        <a class="rd-nav-link" href="/agcms/about">About</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#what-we-do">What We Do</a>
-                        <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#our-projects"
-                              >Our Projects</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#awards"
-                              >Awards</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#advantages"
-                              >Advantages</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#features"
-                              >Features</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#technologies"
-                              >Technologies</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#statistics"
-                              >Statistics</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#our-tips"
-                              >Our Tips</a
-                            >
-                          </li>
-                        </ul>
+                        <a class="rd-nav-link" href="/agcms/articles">Articles</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#pricing">Pricing</a>
+                        <a class="rd-nav-link" href="/agcms/ourprojects">Our Projects</a>
                       </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#faq">FAQ</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#contacts">Contacts</a>
-                      </li>
-                    </ul>
                   </div>
                   <div class="rd-navbar-collapse">
-                    <a class="button button-secondary button-nuka" href="#"
-                      >Download Now<span class="button-overlay"></span
+                    <a class="button button-secondary button-nuka" href="/agcms/contact"
+                      >Contact<span class="button-overlay"></span
                     ></a>
                   </div>
                 </div>
@@ -183,58 +139,18 @@
             <div class="footer-corporate-aside-top">
               <div class="footer-corporate-nav">
                 <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">How We Work</a></li>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="#">Why Choose Us</a></li>
-                  <li><a href="#">Partners</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Contacts</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="list-social">
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-youtube-play"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-facebook-f"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-instagram"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-twitter"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-linkedin"
-                      href="#"
-                    ></a>
-                  </li>
+                  <li><a href="/agcms/about">About</a></li>
+                  <li><a href="/agcms/articles">Articles</a></li>
+                  <li><a href="/agcms/ourprojects">Our Projects</a></li>
+                  <li><a href="/agcms/contact">Contact</a></li>
+                  <li><a href="#">Back To Top</a></li>
                 </ul>
               </div>
             </div>
             <p class="rights">
               <span>&copy;&nbsp;</span><span class="copyright-year"></span
-              ><span>.&nbsp;</span><span>Syntaxis</span><span>.&nbsp;</span
-              ><span>All Rights Reserved. Designed by Omnibubble</span>
+              ><span>.&nbsp;</span><span>Aaron Riley</span><span>.&nbsp;</span
+              ><span>For academic purposes only.</span>
             </p>
           </div>
         </div>

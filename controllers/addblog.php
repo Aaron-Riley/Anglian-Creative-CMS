@@ -25,7 +25,7 @@ if (isset($_POST['submitBlog'])) {
             $stmt = $Conn->prepare($sql);
             $stmt->execute([$title, $content, $_SESSION['user_data']['user_name'], $imageUrl]);
 
-            header('Location: index.php?p=blog');
+            header('Location: /agcms/blog');
         } else {
             print_r($errors);
         }

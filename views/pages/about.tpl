@@ -10,10 +10,10 @@
   </svg>
 </div>
 <div class="container">
-  <h6 class="wow fadeInUp">Welcome to Syntaxis</h6>
+  <h6 class="wow fadeInUp">About Us</h6>
   <h1 class="wow fadeInUp" data-wow-delay=".2s">We are a leading web design agency providing creative solutions</h1>
   <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">With over 20 years of experience on the digital market, we can offer what you are looking for, <br class="d-none d-lg-block">from a landing page to a complex multipage website.
-  </p><img class="wow fadeInUp" src="images/blur-landing-corporate-01-830x473.png" alt="" width="830" height="473" data-wow-delay=".6s"/>
+  </p><img class="wow fadeInUp" src="images/undraw_Team_collaboration_re_ow29.png" alt="" width="830" height="473" data-wow-delay=".6s"/>
 </div>
 </section>
 <div class="position-relative">
@@ -28,16 +28,13 @@
 <div class="container">
   <div class="row row-40 align-items-center wow fadeInUp">
     <div class="col-xl-7 col-lg-6">
-      <div class="img-video"><a class="button-play" href="https://www.youtube.com/embed/EngW7tLk6R8" data-lightgallery="item">
-          <svg width="19" height="21" viewbox="0 0 19 21">
-            <path d="M18.0698 8.92762C19.3101 9.63455 19.3101 11.3655 18.0698 12.0724L2.85678 20.7432C1.59455 21.4626 -6.40869e-08 20.585 0 19.1708L7.85887e-07 1.82916C8.49974e-07 0.414998 1.59455 -0.462644 2.85678 0.256784L18.0698 8.92762Z"></path>
-          </svg></a><img class="box-shadow" src="images/landing-corporate-02-660x406.jpg" alt="" width="660" height="406"/>
+      <div class="img-video"><img class="box-shadow" src="images/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="" width="660" height="406"/>
       </div>
     </div>
     <div class="col-xl-5 col-lg-6">
-      <h6>About Us</h6>
+      <h6>Our Passion</h6>
       <h2>Award-winning web design studio</h2>
-      <p class="big">Syntaxis is a small yet <a class="link-border" href="#">powerful web design</a> & development agency. Over the last few years we've made a reputation for building websites that are:</p>
+      <p class="big">We are passionate about helping businesses succeed in the digital world. With years of experience in web design, development, and digital marketing, our team of experts has the skills and knowledge needed to help businesses of all sizes achieve their online goals.</p>
       <ul class="list-decorative big">
         <li>Highly responsive</li>
         <li>Always up-to-date</li>
@@ -54,8 +51,8 @@
   <div class="row row-fix justify-content-center wow fadeInUp">
     <div class="col-xl-8 col-lg-10">
       <h6>Why Choose Us</h6>
-      <h2>Industry innovators since 1999</h2>
-      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 150k successful projects.</p><a class="button button-secondary button-nuka" href="#">Learn More<span class="button-overlay"></span></a>
+      <h2>Industry innovators since 2020</h2>
+      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 100 successful projects.</p><a class="button button-secondary button-nuka" href="#">Learn More<span class="button-overlay"></span></a>
     </div>
   </div>
 </div>
@@ -67,20 +64,17 @@
 <div class="container">
   <div class="row row-40 align-items-center wow fadeInUp">
     <div class="col-xl-7 col-lg-6">
-      <div class="img-video"><a class="button-play" href="https://www.youtube.com/embed/EngW7tLk6R8" data-lightgallery="item">
-          <svg width="19" height="21" viewbox="0 0 19 21">
-            <path d="M18.0698 8.92762C19.3101 9.63455 19.3101 11.3655 18.0698 12.0724L2.85678 20.7432C1.59455 21.4626 -6.40869e-08 20.585 0 19.1708L7.85887e-07 1.82916C8.49974e-07 0.414998 1.59455 -0.462644 2.85678 0.256784L18.0698 8.92762Z"></path>
-          </svg></a><img class="box-shadow" src="images/landing-corporate-02-660x406.jpg" alt="" width="660" height="406"/>
+      <div class="img-video"><img class="box-shadow" src="images/no-revisions-kmz39UAtKZ0-unsplash.jpg" alt="" width="660" height="406"/>
       </div>
     </div>
     <div class="col-xl-5 col-lg-6">
-      <h6>About Us</h6>
-      <h2>Award-winning web design studio</h2>
-      <p class="big">Syntaxis is a small yet <a class="link-border" href="#">powerful web design</a> & development agency. Over the last few years we've made a reputation for building websites that are:</p>
+      <h6>Our Creativity</h6>
+      <h2>Creativity - what holds the key to your success</h2>
+      <p class="big">Creativity is essential in today's world because it allows individuals and businesses to stand out and differentiate themselves from their competition. It is a key driver of innovation and progress, enabling us to explore new ideas, solve complex problems, and approach challenges from new angles. Whether in business, the arts, or everyday life, creativity is a powerful tool that can help us achieve our goals and realize our full potential.</p>
       <ul class="list-decorative big">
-        <li>Highly responsive</li>
-        <li>Always up-to-date</li>
-        <li>Easy to customize</li>
+        <li>Inspired expression</li>
+        <li>Boundless imagination</li>
+        <li>Limitless ideation</li>
       </ul>
     </div>
   </div>
@@ -90,67 +84,67 @@
 <section class="section section-md bg-default" id="our-tips">
           <div class="container">
             <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <h6>Tips from Our Team</h6>
-              <h2>Browse countless support material, tutorials, <br class="d-none d-xl-block">reviews, and recommendations from our web experts
+              <h6>Meet Our Team</h6>
+              <h2>Our team of experts is ready to help you succeed in the digital world by providing you with the best web design and development services.</h2>
               </h2>
             </div>
             <div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-42-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">Creating an efficient UI</a></h4>
-                  <p class="post-corporate-text">Wondering how to create an UI that works? Browse these tips prepared by our web design experts.</p>
+                  <figure class="post-corporate-figure"><img src="images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="" width="280" height="280"></figure>
+                  <h4 class="post-corporate-title">Amy Carpenter</h4>
+                  <p class="post-corporate-text">Lead Marketing Manager</p>
                 </article>
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-43-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">New web design tools</a></h4>
-                  <p class="post-corporate-text">We’ve prepared a list of 12 new web design tools and resources released this week and mostly free.</p>
+                  <figure class="post-corporate-figure"><img src="images/albert-dera-ILip77SbmOE-unsplash.jpg" alt="" width="280" height="280"></figure>
+                  <h4 class="post-corporate-title">Josh Thomas</h4>
+                  <p class="post-corporate-text">Lead UX/UI Designer</p>
                 </article>
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-44-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">Why SEO matters</a></h4>
-                  <p class="post-corporate-text">SEO gives company owners the power to reach the right people when they are actively searching out information.</p>
+                  <figure class="post-corporate-figure"><img src="images/prince-akachi-J1OScm_uHUQ-unsplash.jpg" alt="" width="280" height="280"></figure>
+                  <h4 class="post-corporate-title">Julie Rue</h4>
+                  <p class="post-corporate-text">UX/UI Designer</p>
                 </article>
               </div>
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-45-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">8 incredible jQuery tips</a></h4>
-                  <p class="post-corporate-text">jQuery has a variety of possibilties to make your website more functional than ever. Here are some basic tricks.</p>
+                  <figure class="post-corporate-figure"><img src="images/austin-wade-X6Uj51n5CE8-unsplash.jpg" alt="" width="280" height="280"></figure>
+                  <h4 class="post-corporate-title">Jay Stone</h4>
+                  <p class="post-corporate-text">Full Stack Web Developer</p>
                 </article>
               </div>
             </div>
             <div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <article class="post-corporate">
-                <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-42-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                <h4 class="post-corporate-title"><a href="#">Creating an efficient UI</a></h4>
-                <p class="post-corporate-text">Wondering how to create an UI that works? Browse these tips prepared by our web design experts.</p>
+                <figure class="post-corporate-figure"><img src="images/jimmy-fermin-bqe0J0b26RQ-unsplash.jpg" alt="" width="280" height="280"></figure>
+                <h4 class="post-corporate-title">Rose Smith</h4>
+                <p class="post-corporate-text">Front-End Web Developer</p>
               </article>
             </div>
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <article class="post-corporate">
-                <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-43-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                <h4 class="post-corporate-title"><a href="#">New web design tools</a></h4>
-                <p class="post-corporate-text">We’ve prepared a list of 12 new web design tools and resources released this week and mostly free.</p>
+                <figure class="post-corporate-figure"><img src="images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="" width="280" height="280"></figure>
+                <h4 class="post-corporate-title">Huy Dinh</h4>
+                <p class="post-corporate-text">Sales Consultant</p>
               </article>
             </div>
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <article class="post-corporate">
-                <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-44-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                <h4 class="post-corporate-title"><a href="#">Why SEO matters</a></h4>
-                <p class="post-corporate-text">SEO gives company owners the power to reach the right people when they are actively searching out information.</p>
+                <figure class="post-corporate-figure"><img src="images/stefan-stefancik-QXevDflbl8A-unsplash.jpg" alt="" width="280" height="280"></figure>
+                <h4 class="post-corporate-title">Megan Miles</h4>
+                <p class="post-corporate-text">Marketing Assistant</p>
               </article>
             </div>
             <div class="col-xl-3 col-lg-4 col-sm-6">
               <article class="post-corporate">
-                <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-45-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                <h4 class="post-corporate-title"><a href="#">8 incredible jQuery tips</a></h4>
-                <p class="post-corporate-text">jQuery has a variety of possibilties to make your website more functional than ever. Here are some basic tricks.</p>
+                <figure class="post-corporate-figure"><img src="images/philip-martin-5aGUyCW_PJw-unsplash.jpg" alt="" width="280" height="280"></figure>
+                <h4 class="post-corporate-title">Justin Trail</h4>
+                <p class="post-corporate-text">DevOps Engineer</p>
               </article>
             </div>
           </div>

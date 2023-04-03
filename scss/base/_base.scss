@@ -1,0 +1,40 @@
+* { 
+	box-sizing: border-box;
+}
+html, body {
+	max-height: 100vh;
+	background: #373737 !important;
+	color: #000 !important;
+	overflow-x: hidden;
+}
+
+.btn-primary {
+	background-color: #000 !important;
+	border-color: #000 !important;
+	&:hover{
+		background-color: #FFF !important;
+		color: #000 !important;
+	}
+}
+
+.btn-custom {
+	background-color: #000 !important;
+	border-color: #000;
+	&:hover{
+		background-color: #FFF !important;
+		color: #000 !important;
+	}
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #000;
+	opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #000;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+	color: #000;
+  }
+

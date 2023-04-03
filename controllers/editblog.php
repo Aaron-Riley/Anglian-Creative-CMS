@@ -45,7 +45,7 @@ if (isset($_POST['changeBlog'])) {
                 ':image_url' => $imageUrl,
                 ':blog_id' => $_GET['id']]);
 
-            header('Location: index.php?p=editblog&id='.    $_GET['id']);
+            header('Location: /agcms/editblog/'.    $_GET['id']);
             print_r($errors);
         }
     } catch (Exception $e) {

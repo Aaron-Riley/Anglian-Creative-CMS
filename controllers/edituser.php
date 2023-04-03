@@ -57,7 +57,7 @@ if (isset($_POST['editUser'])) {
         
 
 
-            header('Location: index.php?p=user');
+            header('Location: /agcms/user');
             print_r($errors);
         }else{
             $smarty->assign("errors", $errors);

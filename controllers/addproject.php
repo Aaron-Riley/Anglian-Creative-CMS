@@ -25,7 +25,7 @@ if (isset($_POST['submitProject'])) {
             $stmt = $Conn->prepare($sql);
             $stmt->execute([$title, $content, $_SESSION['user_data']['user_id'], $imageUrl]);
 
-            header('Location: index.php?p=projects');
+            header('Location: /agcms/projects');
         } else {
             print_r($errors);
         }

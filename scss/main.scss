@@ -1,33 +1,12 @@
-// .b-example-divider {
-//     height: 3rem;
-//     background-color: rgba(0, 0, 0, .1);
-//     border: solid rgba(0, 0, 0, .15);
-//     border-width: 1px 0;
-//     box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-//   }
-
-//   @media (min-width: 992px) {
-//     .rounded-lg-3 { border-radius: .3rem; }
-//   }
-
-// Abstracts
+// @import '../node_modules/bootstrap/scss/bootstrap';
 @import "abstracts/variables";
-//Vendors
-@import "vendors/bootstrap";
-
-//Base
+@import "base/base";
+@import "layout/forms";
 @import "base/typography";
-//Layout
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/background-image";
-
-//Components
-@import "components/buttons";
-@import "components/region-card";
-@import "components/reviews";
-//Pages
-@import "pages/map";
-@import "pages/profile-image";
-//Themes
-@import "themes/theme";
+@import "components/sidebar";
+@import "components/navbar";
+@import "components/content";
+@import "components/imageform";
+@import "base/login";
+@import "components/profile";
+@import "components/editor";

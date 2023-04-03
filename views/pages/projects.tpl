@@ -33,7 +33,7 @@
       {$project.title}
       </h3>
       <div class="mb-1 text-muted">{$project.created_on}</div>
-      <p class="card-text mb-auto text-dark">{$project.content}</p>
+      <div class="card-text mb-auto text-dark restriction">{$project.content}</div>
       </div>
       <img class="card-img-right flex-auto d-none d-md-block" src="{$project.image_url}" alt="Thumbnail [200x250]" data-holder-rendered="true" style="width: 300px; height: 250px; object-fit: cover; ">
       </div>

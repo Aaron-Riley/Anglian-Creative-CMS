@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-03-31 22:29:00
+/* Smarty version 4.0.4, created on 2023-04-03 14:33:01
   from 'C:\MAMP\htdocs\agcms\views\pages\dashboard.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_64275eacc19483_90991532',
+  'unifunc' => 'content_642ae39d9988f7_47883785',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79575a4ea9176a3fd86e50d4e465eaae35243017' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\dashboard.tpl',
-      1 => 1680301706,
+      1 => 1680532379,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64275eacc19483_90991532 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642ae39d9988f7_47883785 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_122929534064275eacc17e10_25488162', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_86949256642ae39d997911_22387745', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_122929534064275eacc17e10_25488162 extends Smarty_Internal_Block
+class Block_86949256642ae39d997911_22387745 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_122929534064275eacc17e10_25488162',
+    0 => 'Block_86949256642ae39d997911_22387745',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -69,13 +69,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
               d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"
             />
           </svg></h2>
-          <p>287</p>
+          <p>1</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div id="card-2" class="card mb-3">
           <h2 class="d-flex align-items-center justify-content-between mx-3">Visitors This Week<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg></h2>
-          <p>2,347</p>
+          <p>23</p>
         </div>
       </div>
       <div class="col-lg-4">

@@ -61,7 +61,7 @@ if (isset($_POST['changeCompany'])) {
             // $_SESSION['is_loggedin'] = true;
             // $_GET['user_data'] = $user_data;
 
-            header('Location: index.php?p=profile');
+            header('Location: /agcms/profile');
             print_r($errors);
         }
     } catch (Exception $e) {

@@ -10,13 +10,12 @@
   </svg>
 </div>
 <div class="container">
-  <h1 class="wow fadeInUp" data-wow-delay=".2s">We are a leading web design agency providing creative solutions</h1>
+  <h1 class="wow fadeInUp" data-wow-delay=".2s">{$projectData.title}</h1>
     <div class="d-flex align-items-center justify-conent-between">
-        <div class="d-flex align-items-center"><img src="/agcms/images/placeholder-logo.png">
-            <p class="ms-3">John Doe</p>
+        <div class="d-flex align-items-center"><img src="{$projectData.image_url}">
         </div>
-        <p>31/05/2021</p>
-    </div>
+        </div>
+        <p>{$projectData.created_on}</p>
 </div>
 </section>
 <div class="position-relative">
@@ -28,12 +27,7 @@
 <!-- HERO END -->
 <section class="section section-md bg-default">
 <div class="container">
-    <div class="row">
-        <div class="col-lg-8">
-        </div>
-        <div class="col-lg-4">
-        <h4>sections</h4>
-        </div>
+        {$projectData.content}
     </div>
 </div>
 </section>

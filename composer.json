@@ -1,6 +1,7 @@
 {
     "require": {
         "smarty/smarty": "^4.0",
-        "sendgrid/sendgrid": "^7.11"
+        "sendgrid/sendgrid": "^7.11",
+        "aws/aws-sdk-php": "^3.263"
     }
 }

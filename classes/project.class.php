@@ -21,4 +21,24 @@ class Project {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getAllProjectsInOrder() {
+        $query = "SELECT * FROM projects ORDER BY created_on DESC";
+        $stmt = $this->Conn->prepare($query);
+        $stmt->execute();
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        $projects = [];
+
+        $firstSection = array_slice($results, 0, 4);
+        $projects['firstSection'] = $firstSection;
+
+        $secondSection = array_slice($results, 4, 1);
+        $projects['secondSection'] = $secondSection;
+
+        $thirdSection = array_slice($results, 5);
+        $projects['thirdSection'] = $thirdSection;
+
+        return $projects;
+    }
 }

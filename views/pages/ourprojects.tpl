@@ -10,10 +10,10 @@
     </svg>
   </div>
   <div class="container">
-    <h6 class="wow fadeInUp">Welcome to Syntaxis</h6>
-    <h1 class="wow fadeInUp" data-wow-delay=".2s">We are a leading web design agency providing creative solutions</h1>
-    <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">With over 20 years of experience on the digital market, we can offer what you are looking for, <br class="d-none d-lg-block">from a landing page to a complex multipage website.
-    </p><img class="wow fadeInUp" src="images/blur-landing-corporate-01-830x473.png" alt="" width="830" height="473" data-wow-delay=".6s"/>
+    <h6 class="wow fadeInUp">Our Projects</h6>
+    <h1 class="wow fadeInUp" data-wow-delay=".2s">Our Projects: See How We've Helped Businesses Like Yours Succeed</h1>
+    <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">We take pride in our portfolio of successful projects. From small businesses to large corporations, we've helped clients from a variety of industries achieve their online goals. Our team of web designers, developers, and digital marketers work together to create customized solutions that meet each client's unique needs. Browse our portfolio to see how we can help your business succeed online.<br class="d-none d-lg-block">from a landing page to a complex multipage website.
+    </p><img class="wow fadeInUp" src="images/undraw_project_complete_lwss.png" alt="" width="830" height="473" data-wow-delay=".6s"/>
   </div>
 </section>
 <div class="position-relative">
@@ -31,34 +31,15 @@
               </h2>
             </div>
             <div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+
+            {foreach from=$projects.firstSection item=project }
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-42-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">Creating an efficient UI</a></h4>
-                  <p class="post-corporate-text">Wondering how to create an UI that works? Browse these tips prepared by our web design experts.</p>
+                  <figure class="post-corporate-figure"><a class="link-img" href="/agcms/project/{$project.project_id}"><img src="{$project.image_url}" alt="" width="280" height="280"></a></figure>
+                  <h4 class="post-corporate-title"><a href="/agcms/project/{$project.project_id}">{$project.title}</a></h4>
                 </article>
               </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6">
-                <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-43-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">New web design tools</a></h4>
-                  <p class="post-corporate-text">We’ve prepared a list of 12 new web design tools and resources released this week and mostly free.</p>
-                </article>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6">
-                <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-44-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">Why SEO matters</a></h4>
-                  <p class="post-corporate-text">SEO gives company owners the power to reach the right people when they are actively searching out information.</p>
-                </article>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-sm-6">
-                <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-45-280x280.jpg" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="#">8 incredible jQuery tips</a></h4>
-                  <p class="post-corporate-text">jQuery has a variety of possibilties to make your website more functional than ever. Here are some basic tricks.</p>
-                </article>
-              </div>
+            {/foreach}
             </div>
           </div>
         </section>
@@ -68,84 +49,27 @@
 <div class="container">
   <div class="row row-40 align-items-center wow fadeInUp">
     <div class="col-xl-7 col-lg-6">
-      <div class="img-video"><a class="button-play" href="https://www.youtube.com/embed/EngW7tLk6R8" data-lightgallery="item">
-          <svg width="19" height="21" viewbox="0 0 19 21">
-            <path d="M18.0698 8.92762C19.3101 9.63455 19.3101 11.3655 18.0698 12.0724L2.85678 20.7432C1.59455 21.4626 -6.40869e-08 20.585 0 19.1708L7.85887e-07 1.82916C8.49974e-07 0.414998 1.59455 -0.462644 2.85678 0.256784L18.0698 8.92762Z"></path>
-          </svg></a><img class="box-shadow" src="images/landing-corporate-02-660x406.jpg" alt="" width="660" height="406"/>
+      <div class="img-video">
+      <a href="/agcms/project/{$projects.secondSection[0].blog_id}"><img class="box-shadow" src="{$projects.secondSection[0].image_url}" alt="" width="660" height="406"/></a>
       </div>
     </div>
     <div class="col-xl-5 col-lg-6">
-      <h6>Blog</h6>
-      <h2>Award-winning web design studio</h2>
-      <p class="big">Syntaxis is a small yet <a class="link-border" href="#">powerful web design</a> & development agency. Over the last few years we've made a reputation for building websites that are:</p>
-      <ul class="list-decorative big">
-        <li>Highly responsive</li>
-        <li>Always up-to-date</li>
-        <li>Easy to customize</li>
-      </ul>
+    <h6>Blog</h6>
+      <h2>{$projects.secondSection[0].title}</h2>
     </div>
   </div>
 </div>
 </section>
 <!-- ABOUT US END -->
 <div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+{foreach from=$projects.thirdSection item=project}
 <div class="col-xl-3 col-lg-4 col-sm-6">
   <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-42-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">Creating an efficient UI</a></h4>
-    <p class="post-corporate-text">Wondering how to create an UI that works? Browse these tips prepared by our web design experts.</p>
+    <figure class="post-corporate-figure"><a class="link-img" href="index.php?p=project&id={$project.project_id}"><img src="{$project.image_url}" alt="" width="280" height="280"></a></figure>
+    <h4 class="post-corporate-title"><a href="index.php?p=project&id={$project.project_id}">{$project.title}</a></h4>
   </article>
 </div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-43-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">New web design tools</a></h4>
-    <p class="post-corporate-text">We’ve prepared a list of 12 new web design tools and resources released this week and mostly free.</p>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-44-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">Why SEO matters</a></h4>
-    <p class="post-corporate-text">SEO gives company owners the power to reach the right people when they are actively searching out information.</p>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-45-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">8 incredible jQuery tips</a></h4>
-    <p class="post-corporate-text">jQuery has a variety of possibilties to make your website more functional than ever. Here are some basic tricks.</p>
-  </article>
-</div>
-</div>
-<div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-42-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">Creating an efficient UI</a></h4>
-    <p class="post-corporate-text">Wondering how to create an UI that works? Browse these tips prepared by our web design experts.</p>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-43-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">New web design tools</a></h4>
-    <p class="post-corporate-text">We’ve prepared a list of 12 new web design tools and resources released this week and mostly free.</p>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-44-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">Why SEO matters</a></h4>
-    <p class="post-corporate-text">SEO gives company owners the power to reach the right people when they are actively searching out information.</p>
-  </article>
-</div>
-<div class="col-xl-3 col-lg-4 col-sm-6">
-  <article class="post-corporate">
-    <figure class="post-corporate-figure"><a class="link-img" href="#"><img src="images/landing-corporate-45-280x280.jpg" alt="" width="280" height="280"></a></figure>
-    <h4 class="post-corporate-title"><a href="#">8 incredible jQuery tips</a></h4>
-    <p class="post-corporate-text">jQuery has a variety of possibilties to make your website more functional than ever. Here are some basic tricks.</p>
-  </article>
-</div>
+{/foreach}
+
 </div>
 {/block}

@@ -1,0 +1,42 @@
+#sidebar{
+    background-color: $black;
+    width: 280px;
+    svg{
+        fill: #ffffff;
+    }
+    #logo{
+        min-height: 100px;
+        min-width: 100px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+        border-radius: 50%;
+    }
+    a {
+        justify-content: center;
+    }
+    p {
+        color: #ffffff;
+    }
+    span{
+        font-weight: 500;
+        font-size: x-large;
+        padding: 0 0 0 10px;
+        color: #ffffff;
+    }
+    #grey{
+        color: #a1a1a1;
+    }
+    .profile img{
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .name a{
+        position: relative;
+        top: -2.5%;
+    }
+}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-03-31 22:28:36
+/* Smarty version 4.0.4, created on 2023-04-03 21:55:41
   from 'C:\MAMP\htdocs\agcms\views\pages\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_64275e94a8adf5_39046373',
+  'unifunc' => 'content_642b4b5dcd2a35_78274695',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '069f29d3b1ef17f78e982a4a22e2c5d16fe624cd' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\home.tpl',
-      1 => 1680298937,
+      1 => 1680558940,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64275e94a8adf5_39046373 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642b4b5dcd2a35_78274695 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_123942612464275e94a86873_93360514', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1217714815642b4b5dcca793_54959468', "content");
 ?>
 
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/mainhome.tpl");
 }
 /* {block "content"} */
-class Block_123942612464275e94a86873_93360514 extends Smarty_Internal_Block
+class Block_1217714815642b4b5dcca793_54959468 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_123942612464275e94a86873_93360514',
+    0 => 'Block_1217714815642b4b5dcca793_54959468',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -53,10 +53,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           </svg>
         </div>
         <div class="container">
-          <h6 class="wow fadeInUp">Welcome to Syntaxis</h6>
-          <h1 class="wow fadeInUp" data-wow-delay=".2s">We are a leading web design agency providing creative solutions</h1>
-          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">With over 20 years of experience on the digital market, we can offer what you are looking for, <br class="d-none d-lg-block">from a landing page to a complex multipage website.
-          </p><img class="wow fadeInUp" src="images/blur-landing-corporate-01-830x473.png" alt="" width="830" height="473" data-wow-delay=".6s"/>
+          <h6 class="wow fadeInUp">Welcome to our Web Agency</h6>
+          <h1 class="wow fadeInUp" data-wow-delay=".2s">{}</h1>
+          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">{}</p>
+          <img class="wow fadeInUp" src="<?php echo $_smarty_tpl->tpl_vars['']->value;?>
+" alt="" width="830" height="473" data-wow-delay=".6s"/>
         </div>
       </section>
       <div class="position-relative">
@@ -71,8 +72,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <div class="row row-fix justify-content-center wow fadeInUp">
               <div class="col-xl-8 col-lg-10">
                 <h6>Why Choose Us</h6>
-                <h2>Industry innovators since 1999</h2>
-                <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 150k successful projects.</p><a class="button button-secondary button-nuka" href="#">Learn More<span class="button-overlay"></span></a>
+                <h2>{}</h2>
+                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -82,21 +83,14 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <div class="container">
             <div class="row row-40 align-items-center wow fadeInUp">
               <div class="col-xl-7 col-lg-6">
-                <div class="img-video"><a class="button-play" href="https://www.youtube.com/embed/EngW7tLk6R8" data-lightgallery="item">
-                    <svg width="19" height="21" viewbox="0 0 19 21">
-                      <path d="M18.0698 8.92762C19.3101 9.63455 19.3101 11.3655 18.0698 12.0724L2.85678 20.7432C1.59455 21.4626 -6.40869e-08 20.585 0 19.1708L7.85887e-07 1.82916C8.49974e-07 0.414998 1.59455 -0.462644 2.85678 0.256784L18.0698 8.92762Z"></path>
-                    </svg></a><img class="box-shadow" src="images/landing-corporate-02-660x406.jpg" alt="" width="660" height="406"/>
+                <div class="img-video"><img class="box-shadow" src="<?php echo $_smarty_tpl->tpl_vars['']->value;?>
+" alt="" width="660" height="406"/>
                 </div>
               </div>
               <div class="col-xl-5 col-lg-6">
                 <h6>About Us</h6>
-                <h2>Award-winning web design studio</h2>
-                <p class="big">Syntaxis is a small yet <a class="link-border" href="#">powerful web design</a> & development agency. Over the last few years we've made a reputation for building websites that are:</p>
-                <ul class="list-decorative big">
-                  <li>Highly responsive</li>
-                  <li>Always up-to-date</li>
-                  <li>Easy to customize</li>
-                </ul>
+                <h2>{}</h2>
+                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/about">About Us<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -106,21 +100,14 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <div class="container">
             <div class="row row-15 justify-content-sm-between wow fadeInUp">
               <div class="col-xl-5 col-lg-6">
-                <h6>Our Mission & Vision</h6>
-                <h2>We aim to deliver quality creative solutions</h2>
-                <p class="big">Our team strives to create a customized user experience with a website built to be an incredible advantage.</p>
+                <h6>Our Mission</h6>
+                <h2>{}</h2>
+                <p class="big">{}</p>
                 <div class="quote-classic">
                   <div class="quote-classic-body">
-                    <q>Our creativity and unique approach are the key to success of your business!</q>
+                    <q>{}</q>
                   </div>
-                  <div class="quote-classic-footer unit unit-spacing-md">
-                    <div class="unit-left"><img class="quote-classic-photo rounded-circle" src="images/landing-corporate-04-60x60.jpg" alt="" width="60" height="60"/>
-                    </div>
-                    <div class="unit-body">
-                      <div class="quote-classic-name">Adam Smith</div>
-                      <div class="quote-classic-position">CEO of Syntaxis</div>
-                    </div>
-                  </div>
+
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6">
@@ -142,44 +129,50 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <h2 class="heading-1">Take a look at the recent and featured projects that we have completed</h2>
           <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-10">
-              <p class="big">Our team of creative experts and web designers regularly works to deliver the best websites for you. Here are some of our recent projects we have worked on.</p><a class="button button-secondary button-nuka offset-top-1" href="#">View More<span class="button-overlay"></span></a>
+              <p class="big">Our team of creative experts and web designers regularly works to deliver the best websites for you. Here are some of our recent projects we have worked on.</p><a class="button button-secondary button-nuka offset-top-1" href="/agcms/ourprojects">View More<span class="button-overlay"></span></a>
             </div>
           </div>
         </div>
 
         <div class="owl-carousel owl-corporate-wide wow fadeInUp" data-items="1" data-sm-items="2" data-md-items="3" data-xl-items="4" data-stage-padding="60" data-sm-stage-padding="38" data-margin="20" data-slide-transition="linear" data-smart-speed="4000" data-autoplay-time-out="4000">
-          <div class="owl-corporate-item"><img src="images/landing-corporate-08-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['firstSection'][0]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-09-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['firstSection'][1]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-10-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['firstSection'][2]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-11-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['secondSection'][0]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-12-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][0]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-13-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][1]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-14-442x310.jpg" alt="" width="442" height="310"/>
-          </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-15-442x310.jpg" alt="" width="442" height="310"/>
-          </div>
-        </div>
+                  </div>
 
         <div class="owl-carousel owl-corporate-wide wow fadeInUp" data-items="1" data-sm-items="2" data-md-items="3" data-xl-items="4" data-stage-padding="80" data-sm-stage-padding="38" data-margin="20" data-slide-transition="linear" data-smart-speed="4500" data-autoplay-time-out="4500" data-center="true">
-          <div class="owl-corporate-item"><img src="images/landing-corporate-16-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][2]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-17-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][3]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-18-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][4]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-19-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][5]['image_url'];?>
+" alt="" width="442" height="310"/>
+          </div> 
+           <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][6]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-20-442x310.jpg" alt="" width="442" height="310"/>
-          </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-21-442x310.jpg" alt="" width="442" height="310"/>
-          </div>
-          <div class="owl-corporate-item"><img src="images/landing-corporate-22-442x310.jpg" alt="" width="442" height="310"/>
+          <div class="owl-corporate-item"><img src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['thirdSection'][7]['image_url'];?>
+" alt="" width="442" height="310"/>
           </div>
         </div>
       </section>
@@ -194,27 +187,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <div class="container">
             <div class="row row-fix row-40 align-items-center wow fadeInUp">
               <div class="col-xl-5">
-                <h6>Our Awards</h6>
-                <h2>#1 provider of stunning websites</h2>
-                <p class="big">Since our establishment, we have received numerous awards that show how we changed the digital industry.</p>
+                <h6>Our Team</h6>
+                <h2>Meet our team of experts</h2>
+                <p class="big">The team within the digital agency works collaboratively to create and execute innovative digital marketing strategies for their clients. They leverage their expertise in areas such as web design, social media marketing, and search engine optimization to drive measurable results and help their clients achieve their business objectives.</p>
               </div>
               <div class="col-xl-7">
                 <div class="row row-40 row-narrow">
                   <div class="col-sm-6">
-                    <article class="box-corporate">
-                      <h4 class="box-corporate-title">Website of the year: cute fashion</h4>
-                      <p class="box-corporate-text">One of our recent projects, an online fashion magazine, has been awarded for a unique design approach.</p>
-                      <div class="heading-1 box-corporate-year text-primary">2020</div>
-                    </article>
+                  <img style="border-radius: 5%" src="<?php echo $_smarty_tpl->tpl_vars['users']->value[0]['user_url'];?>
+"/>
                   </div>
                   <div class="col-sm-6">
-                    <article class="box-corporate">
-                      <h4 class="box-corporate-title">Best responsive web design: iStep Co.</h4>
-                      <p class="box-corporate-text">We achieved new levels of web responsiveness in this project, for which we were awarded in 2017.</p>
-                      <div class="heading-1 box-corporate-year text-secondary-2">2019</div>
-                    </article>
+                  <img style="border-radius: 5%" src="<?php echo $_smarty_tpl->tpl_vars['users']->value[1]['user_url'];?>
+"/>
                   </div>
-                </div>
               </div>
             </div>
           </div>

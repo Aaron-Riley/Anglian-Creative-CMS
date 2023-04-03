@@ -2,4 +2,4 @@
 
 $_SESSION = array();   
 session_destroy();
-header('Location: index.php?p=login');
+header('Location: /agcms/login');

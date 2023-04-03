@@ -46,7 +46,7 @@ if (isset($_POST['changeProject'])) {
                 ':image_url' => $imageUrl,
                 ':project_id' => $_GET['id']]);
 
-            header('Location: index.php?p=editprojects&id='.    $_GET['id']);
+            header('Location: /agcms/editprojects/'.    $_GET['id']);
             print_r($errors);
         }
     } catch (Exception $e) {
@@ -70,7 +70,7 @@ if (isset($_POST['deleteProject'])) {
             $stmt->execute([
                 "project_id" => $_GET['id']]);
 
-            header('Location: index.php?p=projects');
+            header('Location: /agcms/projects/');
         } else {
             print_r($errors);
         }

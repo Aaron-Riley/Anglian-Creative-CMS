@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-03-31 22:28:36
+/* Smarty version 4.0.4, created on 2023-04-03 17:27:54
   from 'C:\MAMP\htdocs\agcms\views\layouts\mainhome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_64275e94ba5588_82768177',
+  'unifunc' => 'content_642b0c9a1b1b11_22137996',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8cbb92ab4c43eed4473816eb9580cbf8933e4fc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\mainhome.tpl',
-      1 => 1680296293,
+      1 => 1680542872,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64275e94ba5588_82768177 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642b0c9a1b1b11_22137996 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -92,15 +92,15 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                   </button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"
+                    <!--Brand--><a class="brand" href="/agcms/home"
                       ><img
                         class="brand-logo-dark"
-                        src="images/logo-default-362x90.png"
+                        src="images/logo-white.png"
                         alt=""
                         width="181"
                         height="45" /><img
                         class="brand-logo-light"
-                        src="images/logo-inverse-362x90.png"
+                        src="images/logo-white.png"
                         alt=""
                         width="181"
                         height="45"
@@ -111,62 +111,18 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#about">About</a>
+                        <a class="rd-nav-link" href="/agcms/about">About</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#what-we-do">What We Do</a>
-                        <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#our-projects"
-                              >Our Projects</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#awards"
-                              >Awards</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#advantages"
-                              >Advantages</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#features"
-                              >Features</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#technologies"
-                              >Technologies</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#statistics"
-                              >Statistics</a
-                            >
-                          </li>
-                          <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="#our-tips"
-                              >Our Tips</a
-                            >
-                          </li>
-                        </ul>
+                        <a class="rd-nav-link" href="/agcms/articles">Articles</a>
                       </li>
                       <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#pricing">Pricing</a>
+                        <a class="rd-nav-link" href="/agcms/ourprojects">Our Projects</a>
                       </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#faq">FAQ</a>
-                      </li>
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#contacts">Contacts</a>
-                      </li>
-                    </ul>
                   </div>
                   <div class="rd-navbar-collapse">
-                    <a class="button button-secondary button-nuka" href="#"
-                      >Download Now<span class="button-overlay"></span
+                    <a class="button button-secondary button-nuka" href="/agcms/contact"
+                      >Contact<span class="button-overlay"></span
                     ></a>
                   </div>
                 </div>
@@ -176,7 +132,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </div>
       </header>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_190338549664275e94ba23c9_05217581', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1177389296642b0c9a1b08c0_34957336', "content");
 ?>
 
       <!-- Footer-->
@@ -211,58 +167,18 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_190338549664275e94
             <div class="footer-corporate-aside-top">
               <div class="footer-corporate-nav">
                 <ul>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our Services</a></li>
-                  <li><a href="#">How We Work</a></li>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="#">Why Choose Us</a></li>
-                  <li><a href="#">Partners</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Contacts</a></li>
-                </ul>
-              </div>
-              <div>
-                <ul class="list-social">
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-youtube-play"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-facebook-f"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-instagram"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-twitter"
-                      href="#"
-                    ></a>
-                  </li>
-                  <li>
-                    <a
-                      class="link-social icon novi-icon fa-linkedin"
-                      href="#"
-                    ></a>
-                  </li>
+                  <li><a href="/agcms/about">About</a></li>
+                  <li><a href="/agcms/articles">Articles</a></li>
+                  <li><a href="/agcms/ourprojects">Our Projects</a></li>
+                  <li><a href="/agcms/contact">Contact</a></li>
+                  <li><a href="#">Back To Top</a></li>
                 </ul>
               </div>
             </div>
             <p class="rights">
               <span>&copy;&nbsp;</span><span class="copyright-year"></span
-              ><span>.&nbsp;</span><span>Syntaxis</span><span>.&nbsp;</span
-              ><span>All Rights Reserved. Designed by Omnibubble</span>
+              ><span>.&nbsp;</span><span>Aaron Riley</span><span>.&nbsp;</span
+              ><span>For academic purposes only.</span>
             </p>
           </div>
         </div>
@@ -282,12 +198,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_190338549664275e94
 </html>
 <?php }
 /* {block "content"} */
-class Block_190338549664275e94ba23c9_05217581 extends Smarty_Internal_Block
+class Block_1177389296642b0c9a1b08c0_34957336 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_190338549664275e94ba23c9_05217581',
+    0 => 'Block_1177389296642b0c9a1b08c0_34957336',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
