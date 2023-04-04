@@ -8,3 +8,8 @@ $User = new User($Conn);
 $userData = $User->getAllUsers();
 
 $smarty->assign("users", $userData);
+
+$Content = new Content($Conn);
+$contentData = $Content->getAllContent();
+
+$smarty->assign("contentData", $contentData[0]);

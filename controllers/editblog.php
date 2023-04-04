@@ -67,7 +67,7 @@ if (isset($_POST['deleteBlog'])) {
             $stmt->execute([
                 "blog_id" => $_GET['id']]);
 
-            header('Location: index.php?p=blog');
+            header('Location: /agcms/blog');
         } else {
             print_r($errors);
         }

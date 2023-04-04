@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 15:44:28
+/* Smarty version 4.0.4, created on 2023-04-04 20:37:25
   from 'C:\MAMP\htdocs\agcms\views\pages\blog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642af45c676513_03699163',
+  'unifunc' => 'content_642c8a85f15d00_16603903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '63a9f61d15ea74ae52be83c4f5399ad7d68fd0bf' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\blog.tpl',
-      1 => 1680536551,
+      1 => 1680640597,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642af45c676513_03699163 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642c8a85f15d00_16603903 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1082098712642af45c66fe57_86442081', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1851279190642c8a85ef0900_37872187', "body");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/main.tpl");
 }
 /* {block "body"} */
-class Block_1082098712642af45c66fe57_86442081 extends Smarty_Internal_Block
+class Block_1851279190642c8a85ef0900_37872187 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1082098712642af45c66fe57_86442081',
+    0 => 'Block_1851279190642c8a85ef0900_37872187',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -76,7 +76,7 @@ $_smarty_tpl->tpl_vars['blog']->do_else = false;
       </h3>
       <div class="mb-1 text-muted"><?php echo $_smarty_tpl->tpl_vars['blog']->value['created_on'];?>
 </div>
-      <div class="card-text mb-auto text-dark"><?php echo $_smarty_tpl->tpl_vars['blog']->value['content'];?>
+      <div class="card-text mb-auto text-dark restriction"><?php echo $_smarty_tpl->tpl_vars['blog']->value['content'];?>
 </div>
       </div>
       <img class="card-img-right flex-auto d-none d-md-block" src="<?php echo $_smarty_tpl->tpl_vars['blog']->value['image_url'];?>

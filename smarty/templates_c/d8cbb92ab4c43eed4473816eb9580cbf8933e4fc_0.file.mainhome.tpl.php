@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 17:27:54
+/* Smarty version 4.0.4, created on 2023-04-04 20:18:41
   from 'C:\MAMP\htdocs\agcms\views\layouts\mainhome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642b0c9a1b1b11_22137996',
+  'unifunc' => 'content_642c8621cf7207_43280138',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8cbb92ab4c43eed4473816eb9580cbf8933e4fc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\mainhome.tpl',
-      1 => 1680542872,
+      1 => 1680639518,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642b0c9a1b1b11_22137996 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642c8621cf7207_43280138 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -102,7 +102,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                         class="brand-logo-light"
                         src="images/logo-white.png"
                         alt=""
-                        width="181"
+                        width="90"
                         height="45"
                     /></a>
                   </div>
@@ -132,7 +132,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </div>
       </header>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1177389296642b0c9a1b08c0_34957336', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1128486280642c8621cf5e57_03871347', "content");
 ?>
 
       <!-- Footer-->
@@ -198,12 +198,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1177389296642b0c9a
 </html>
 <?php }
 /* {block "content"} */
-class Block_1177389296642b0c9a1b08c0_34957336 extends Smarty_Internal_Block
+class Block_1128486280642c8621cf5e57_03871347 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1177389296642b0c9a1b08c0_34957336',
+    0 => 'Block_1128486280642c8621cf5e57_03871347',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

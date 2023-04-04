@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 21:55:41
+/* Smarty version 4.0.4, created on 2023-04-04 17:52:19
   from 'C:\MAMP\htdocs\agcms\views\pages\home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642b4b5dcd2a35_78274695',
+  'unifunc' => 'content_642c63d3c5a0e5_91584467',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '069f29d3b1ef17f78e982a4a22e2c5d16fe624cd' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\home.tpl',
-      1 => 1680558940,
+      1 => 1680630734,
       2 => 'file',
     ),
   ),
@@ -20,25 +20,25 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642b4b5dcd2a35_78274695 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642c63d3c5a0e5_91584467 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1217714815642b4b5dcca793_54959468', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_582048938642c63d3c50919_52441686', "content");
 ?>
 
 
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/mainhome.tpl");
 }
 /* {block "content"} */
-class Block_1217714815642b4b5dcca793_54959468 extends Smarty_Internal_Block
+class Block_582048938642c63d3c50919_52441686 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1217714815642b4b5dcca793_54959468',
+    0 => 'Block_582048938642c63d3c50919_52441686',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -54,9 +54,11 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         </div>
         <div class="container">
           <h6 class="wow fadeInUp">Welcome to our Web Agency</h6>
-          <h1 class="wow fadeInUp" data-wow-delay=".2s">{}</h1>
-          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">{}</p>
-          <img class="wow fadeInUp" src="<?php echo $_smarty_tpl->tpl_vars['']->value;?>
+          <h1 class="wow fadeInUp" data-wow-delay=".2s"><?php echo $_smarty_tpl->tpl_vars['contentData']->value['hero_title'];?>
+</h1>
+          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s"><?php echo $_smarty_tpl->tpl_vars['contentData']->value['hero_content'];?>
+</p>
+          <img class="wow fadeInUp" src="<?php echo $_smarty_tpl->tpl_vars['contentData']->value['hero_url'];?>
 " alt="" width="830" height="473" data-wow-delay=".6s"/>
         </div>
       </section>
@@ -72,8 +74,10 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <div class="row row-fix justify-content-center wow fadeInUp">
               <div class="col-xl-8 col-lg-10">
                 <h6>Why Choose Us</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
+                <h2><?php echo $_smarty_tpl->tpl_vars['contentData']->value['article_title'];?>
+</h2>
+                <p class="big"><?php echo $_smarty_tpl->tpl_vars['contentData']->value['article_content'];?>
+</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -83,14 +87,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
           <div class="container">
             <div class="row row-40 align-items-center wow fadeInUp">
               <div class="col-xl-7 col-lg-6">
-                <div class="img-video"><img class="box-shadow" src="<?php echo $_smarty_tpl->tpl_vars['']->value;?>
+                <div class="img-video"><img class="box-shadow" src="<?php echo $_smarty_tpl->tpl_vars['contentData']->value['about_url'];?>
 " alt="" width="660" height="406"/>
                 </div>
               </div>
               <div class="col-xl-5 col-lg-6">
                 <h6>About Us</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/about">About Us<span class="button-overlay"></span></a>
+                <h2><?php echo $_smarty_tpl->tpl_vars['contentData']->value['about_title'];?>
+</h2>
+                <p class="big"><?php echo $_smarty_tpl->tpl_vars['contentData']->value['about_content'];?>
+</p><a class="button button-secondary button-nuka" href="/agcms/about">About Us<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -101,17 +107,21 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <div class="row row-15 justify-content-sm-between wow fadeInUp">
               <div class="col-xl-5 col-lg-6">
                 <h6>Our Mission</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p>
+                <h2><?php echo $_smarty_tpl->tpl_vars['contentData']->value['mission_title'];?>
+</h2>
+                <p class="big"><?php echo $_smarty_tpl->tpl_vars['contentData']->value['mission_content'];?>
+</p>
                 <div class="quote-classic">
                   <div class="quote-classic-body">
-                    <q>{}</q>
+                    <q><?php echo $_smarty_tpl->tpl_vars['contentData']->value['mission_quote'];?>
+</q>
                   </div>
 
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6">
-                <div class="text-center text-lg-left"><img src="images/blur-landing-corporate-03-500x406.png" alt="" width="500" height="406"/>
+                <div class="text-center text-lg-left"><img src="<?php echo $_smarty_tpl->tpl_vars['contentData']->value['mission_url'];?>
+" alt="" width="500" height="406"/>
                 </div>
               </div>
             </div>

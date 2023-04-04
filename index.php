@@ -20,7 +20,7 @@ if ($_GET['p']) {
 
 
     $secure_pages = [
-        'dashboard', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user', 'editprofile', 'profile', 'editcompany'
+        'dashboard', 'addblog', 'editblog', 'addproject', 'editprojects', 'adduser', 'edituser', 'blog', 'projects', 'user', 'editprofile', 'profile', 'editcompany', 'content'
     ];
 
     if (in_array($_GET['p'], $secure_pages)) {

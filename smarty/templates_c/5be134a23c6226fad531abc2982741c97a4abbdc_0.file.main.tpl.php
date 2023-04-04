@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-03-31 22:28:55
+/* Smarty version 4.0.4, created on 2023-04-04 13:01:22
   from 'C:\MAMP\htdocs\agcms\views\layouts\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_64275ea7506a70_40688442',
+  'unifunc' => 'content_642c1fa2e1d382_18045718',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5be134a23c6226fad531abc2982741c97a4abbdc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\main.tpl',
-      1 => 1680301706,
+      1 => 1680613279,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64275ea7506a70_40688442 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642c1fa2e1d382_18045718 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -146,6 +146,11 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
               </svg>
             </a>
           </li>
+          <li>
+            <a href="/agcms/content"
+              class="nav-link link-light d-flex align-center justify-content-between mb-3">Content<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg>
+            </a>
+          </li>
           <?php if ($_smarty_tpl->tpl_vars['is_loggedin']->value) {?>
             <?php if ($_smarty_tpl->tpl_vars['user_data']->value['user_role'] === 'Global Administrator') {?>
               <li>
@@ -165,7 +170,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <hr />
       </div>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58748206964275ea7503f25_84460815', "body");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2114779039642c1fa2e1c6a3_99961758', "body");
 ?>
 
 
@@ -192,12 +197,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_58748206964275ea75
 
 </html><?php }
 /* {block "body"} */
-class Block_58748206964275ea7503f25_84460815 extends Smarty_Internal_Block
+class Block_2114779039642c1fa2e1c6a3_99961758 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_58748206964275ea7503f25_84460815',
+    0 => 'Block_2114779039642c1fa2e1c6a3_99961758',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

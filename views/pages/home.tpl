@@ -10,9 +10,9 @@
         </div>
         <div class="container">
           <h6 class="wow fadeInUp">Welcome to our Web Agency</h6>
-          <h1 class="wow fadeInUp" data-wow-delay=".2s">{}</h1>
-          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">{}</p>
-          <img class="wow fadeInUp" src="{$}" alt="" width="830" height="473" data-wow-delay=".6s"/>
+          <h1 class="wow fadeInUp" data-wow-delay=".2s">{$contentData.hero_title}</h1>
+          <p class="big d-none d-sm-block wow fadeInUp" data-wow-delay=".4s">{$contentData.hero_content}</p>
+          <img class="wow fadeInUp" src="{$contentData.hero_url}" alt="" width="830" height="473" data-wow-delay=".6s"/>
         </div>
       </section>
       <div class="position-relative">
@@ -27,8 +27,8 @@
             <div class="row row-fix justify-content-center wow fadeInUp">
               <div class="col-xl-8 col-lg-10">
                 <h6>Why Choose Us</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
+                <h2>{$contentData.article_title}</h2>
+                <p class="big">{$contentData.article_content}</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -38,13 +38,13 @@
           <div class="container">
             <div class="row row-40 align-items-center wow fadeInUp">
               <div class="col-xl-7 col-lg-6">
-                <div class="img-video"><img class="box-shadow" src="{$}" alt="" width="660" height="406"/>
+                <div class="img-video"><img class="box-shadow" src="{$contentData.about_url}" alt="" width="660" height="406"/>
                 </div>
               </div>
               <div class="col-xl-5 col-lg-6">
                 <h6>About Us</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p><a class="button button-secondary button-nuka" href="/agcms/about">About Us<span class="button-overlay"></span></a>
+                <h2>{$contentData.about_title}</h2>
+                <p class="big">{$contentData.about_content}</p><a class="button button-secondary button-nuka" href="/agcms/about">About Us<span class="button-overlay"></span></a>
               </div>
             </div>
           </div>
@@ -55,17 +55,17 @@
             <div class="row row-15 justify-content-sm-between wow fadeInUp">
               <div class="col-xl-5 col-lg-6">
                 <h6>Our Mission</h6>
-                <h2>{}</h2>
-                <p class="big">{}</p>
+                <h2>{$contentData.mission_title}</h2>
+                <p class="big">{$contentData.mission_content}</p>
                 <div class="quote-classic">
                   <div class="quote-classic-body">
-                    <q>{}</q>
+                    <q>{$contentData.mission_quote}</q>
                   </div>
 
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6">
-                <div class="text-center text-lg-left"><img src="images/blur-landing-corporate-03-500x406.png" alt="" width="500" height="406"/>
+                <div class="text-center text-lg-left"><img src="{$contentData.mission_url}" alt="" width="500" height="406"/>
                 </div>
               </div>
             </div>

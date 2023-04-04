@@ -76,7 +76,7 @@
                         class="brand-logo-light"
                         src="images/logo-white.png"
                         alt=""
-                        width="181"
+                        width="90"
                         height="45"
                     /></a>
                   </div>
