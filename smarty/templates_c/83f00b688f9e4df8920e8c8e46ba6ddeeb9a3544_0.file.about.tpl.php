@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 20:28:31
+/* Smarty version 4.0.4, created on 2023-04-05 08:56:10
   from 'C:\MAMP\htdocs\agcms\views\pages\about.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642b36ef09d808_67582668',
+  'unifunc' => 'content_642d37aa0978d2_41180930',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '83f00b688f9e4df8920e8c8e46ba6ddeeb9a3544' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\about.tpl',
-      1 => 1680553708,
+      1 => 1680684967,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642b36ef09d808_67582668 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642d37aa0978d2_41180930 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_331553476642b36ef09cec8_34870626', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_336524600642d37aa096f10_72574196', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/mainhome.tpl");
 }
 /* {block "content"} */
-class Block_331553476642b36ef09cec8_34870626 extends Smarty_Internal_Block
+class Block_336524600642d37aa096f10_72574196 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_331553476642b36ef09cec8_34870626',
+    0 => 'Block_336524600642d37aa096f10_72574196',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -93,7 +93,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <div class="col-xl-8 col-lg-10">
       <h6>Why Choose Us</h6>
       <h2>Industry innovators since 2020</h2>
-      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 100 successful projects.</p><a class="button button-secondary button-nuka" href="#">Learn More<span class="button-overlay"></span></a>
+      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 100 successful projects.</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
     </div>
   </div>
 </div>

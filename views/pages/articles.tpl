@@ -26,7 +26,7 @@
 <section class="section section-md bg-default" id="our-tips">
           <div class="container">
             <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <h6>Tips from Our Team</h6>
+              <h6>What We Believe In</h6>
               <h2>Browse countless support material, tutorials, <br class="d-none d-xl-block">reviews, and recommendations from our web experts
               </h2>
             </div>
@@ -61,7 +61,7 @@
 </div>
 </section>
 <!-- ABOUT US END -->
-<div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<div class="row row-md row-50 justify-content-center wow fadeInUp mb-3" style="visibility: visible; animation-name: fadeInUp;">
 {foreach from=$blogs.thirdSection item=blog}
 <div class="col-xl-3 col-lg-4 col-sm-6">
   <article class="post-corporate">

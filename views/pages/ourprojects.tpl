@@ -26,7 +26,7 @@
 <section class="section section-md bg-default" id="our-tips">
           <div class="container">
             <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <h6>Tips from Our Team</h6>
+              <h6>Some of Our Work</h6>
               <h2>Browse countless support material, tutorials, <br class="d-none d-xl-block">reviews, and recommendations from our web experts
               </h2>
             </div>
@@ -35,8 +35,8 @@
             {foreach from=$projects.firstSection item=project }
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="/agcms/project/{$project.project_id}"><img src="{$project.image_url}" alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="/agcms/project/{$project.project_id}">{$project.title}</a></h4>
+                  <figure class="post-corporate-figure"><a class="link-img" href="index.php?p=project&id={$project.project_id}"><img src="{$project.image_url}" alt="" width="280" height="280"></a></figure>
+                  <h4 class="post-corporate-title"><a href="index.php?p=project&id={$project.project_id}">{$project.title}</a></h4>
                 </article>
               </div>
             {/foreach}
@@ -50,18 +50,18 @@
   <div class="row row-40 align-items-center wow fadeInUp">
     <div class="col-xl-7 col-lg-6">
       <div class="img-video">
-      <a href="/agcms/project/{$projects.secondSection[0].blog_id}"><img class="box-shadow" src="{$projects.secondSection[0].image_url}" alt="" width="660" height="406"/></a>
+      <a href="index.php?p=project&id={$projects.secondSection[0].project_id}"><img class="box-shadow" src="{$projects.secondSection[0].image_url}" alt="" width="660" height="406"/></a>
       </div>
     </div>
     <div class="col-xl-5 col-lg-6">
-    <h6>Blog</h6>
+    <h6>Project</h6>
       <h2>{$projects.secondSection[0].title}</h2>
     </div>
   </div>
 </div>
 </section>
 <!-- ABOUT US END -->
-<div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<div class="row row-md row-50 justify-content-center wow fadeInUp mb-3" style="visibility: visible; animation-name: fadeInUp;">
 {foreach from=$projects.thirdSection item=project}
 <div class="col-xl-3 col-lg-4 col-sm-6">
   <article class="post-corporate">

@@ -52,7 +52,7 @@
     <div class="col-xl-8 col-lg-10">
       <h6>Why Choose Us</h6>
       <h2>Industry innovators since 2020</h2>
-      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 100 successful projects.</p><a class="button button-secondary button-nuka" href="#">Learn More<span class="button-overlay"></span></a>
+      <p class="big">Since the day of our establishment, we have been revolutionizing the industry of digital solutions and web design that resulted in over 100 successful projects.</p><a class="button button-secondary button-nuka" href="/agcms/articles">Learn More<span class="button-overlay"></span></a>
     </div>
   </div>
 </div>

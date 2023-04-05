@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 16:52:17
+/* Smarty version 4.0.4, created on 2023-04-05 08:52:27
   from 'C:\MAMP\htdocs\agcms\views\pages\ourprojects.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642b044197d055_66750357',
+  'unifunc' => 'content_642d36cbbe7eb1_23783566',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '19d212dce5a27d5cf7c4a45ea1f6865d85015b67' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\ourprojects.tpl',
-      1 => 1680540729,
+      1 => 1680684744,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642b044197d055_66750357 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642d36cbbe7eb1_23783566 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1599909341642b04419747d6_47619407', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_728414858642d36cbbdf6a5_96636963', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/mainhome.tpl");
 }
 /* {block "content"} */
-class Block_1599909341642b04419747d6_47619407 extends Smarty_Internal_Block
+class Block_728414858642d36cbbdf6a5_96636963 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1599909341642b04419747d6_47619407',
+    0 => 'Block_728414858642d36cbbdf6a5_96636963',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,7 +67,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 <section class="section section-md bg-default" id="our-tips">
           <div class="container">
             <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <h6>Tips from Our Team</h6>
+              <h6>Some of Our Work</h6>
               <h2>Browse countless support material, tutorials, <br class="d-none d-xl-block">reviews, and recommendations from our web experts
               </h2>
             </div>
@@ -81,10 +81,10 @@ $_smarty_tpl->tpl_vars['project']->do_else = false;
 ?>
               <div class="col-xl-3 col-lg-4 col-sm-6">
                 <article class="post-corporate">
-                  <figure class="post-corporate-figure"><a class="link-img" href="/agcms/project/<?php echo $_smarty_tpl->tpl_vars['project']->value['project_id'];?>
+                  <figure class="post-corporate-figure"><a class="link-img" href="index.php?p=project&id=<?php echo $_smarty_tpl->tpl_vars['project']->value['project_id'];?>
 "><img src="<?php echo $_smarty_tpl->tpl_vars['project']->value['image_url'];?>
 " alt="" width="280" height="280"></a></figure>
-                  <h4 class="post-corporate-title"><a href="/agcms/project/<?php echo $_smarty_tpl->tpl_vars['project']->value['project_id'];?>
+                  <h4 class="post-corporate-title"><a href="index.php?p=project&id=<?php echo $_smarty_tpl->tpl_vars['project']->value['project_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['project']->value['title'];?>
 </a></h4>
                 </article>
@@ -102,13 +102,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
   <div class="row row-40 align-items-center wow fadeInUp">
     <div class="col-xl-7 col-lg-6">
       <div class="img-video">
-      <a href="/agcms/project/<?php echo $_smarty_tpl->tpl_vars['projects']->value['secondSection'][0]['blog_id'];?>
+      <a href="index.php?p=project&id=<?php echo $_smarty_tpl->tpl_vars['projects']->value['secondSection'][0]['project_id'];?>
 "><img class="box-shadow" src="<?php echo $_smarty_tpl->tpl_vars['projects']->value['secondSection'][0]['image_url'];?>
 " alt="" width="660" height="406"/></a>
       </div>
     </div>
     <div class="col-xl-5 col-lg-6">
-    <h6>Blog</h6>
+    <h6>Project</h6>
       <h2><?php echo $_smarty_tpl->tpl_vars['projects']->value['secondSection'][0]['title'];?>
 </h2>
     </div>
@@ -116,7 +116,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 </section>
 <!-- ABOUT US END -->
-<div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<div class="row row-md row-50 justify-content-center wow fadeInUp mb-3" style="visibility: visible; animation-name: fadeInUp;">
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['projects']->value['thirdSection'], 'project');
 $_smarty_tpl->tpl_vars['project']->do_else = true;

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-03 21:51:03
+/* Smarty version 4.0.4, created on 2023-04-05 08:54:26
   from 'C:\MAMP\htdocs\agcms\views\pages\articles.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642b4a4742a286_84718297',
+  'unifunc' => 'content_642d3742e0ac49_72558118',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4777f71c641e079d1e97c33f8dea2719764828c4' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\pages\\articles.tpl',
-      1 => 1680558661,
+      1 => 1680684864,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642b4a4742a286_84718297 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642d3742e0ac49_72558118 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_640391338642b4a474192c5_02518343', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1348282344642d3742e01c33_54035515', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "layouts/mainhome.tpl");
 }
 /* {block "content"} */
-class Block_640391338642b4a474192c5_02518343 extends Smarty_Internal_Block
+class Block_1348282344642d3742e01c33_54035515 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_640391338642b4a474192c5_02518343',
+    0 => 'Block_1348282344642d3742e01c33_54035515',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,7 +67,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 <section class="section section-md bg-default" id="our-tips">
           <div class="container">
             <div class="text-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-              <h6>Tips from Our Team</h6>
+              <h6>What We Believe In</h6>
               <h2>Browse countless support material, tutorials, <br class="d-none d-xl-block">reviews, and recommendations from our web experts
               </h2>
             </div>
@@ -115,7 +115,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 </section>
 <!-- ABOUT US END -->
-<div class="row row-md row-50 justify-content-center wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+<div class="row row-md row-50 justify-content-center wow fadeInUp mb-3" style="visibility: visible; animation-name: fadeInUp;">
 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['blogs']->value['thirdSection'], 'blog');
 $_smarty_tpl->tpl_vars['blog']->do_else = true;
