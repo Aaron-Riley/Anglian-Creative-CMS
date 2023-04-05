@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Syntaxis Web Agency</title>
+    <title>Web Agency</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"

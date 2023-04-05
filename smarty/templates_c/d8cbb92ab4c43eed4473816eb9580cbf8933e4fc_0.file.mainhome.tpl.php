@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.0.4, created on 2023-04-04 20:18:41
+/* Smarty version 4.0.4, created on 2023-04-05 12:48:42
   from 'C:\MAMP\htdocs\agcms\views\layouts\mainhome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.0.4',
-  'unifunc' => 'content_642c8621cf7207_43280138',
+  'unifunc' => 'content_642d6e2ac1b4e8_12033954',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8cbb92ab4c43eed4473816eb9580cbf8933e4fc' => 
     array (
       0 => 'C:\\MAMP\\htdocs\\agcms\\views\\layouts\\mainhome.tpl',
-      1 => 1680639518,
+      1 => 1680698899,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_642c8621cf7207_43280138 (Smarty_Internal_Template $_smarty_tpl) {
+function content_642d6e2ac1b4e8_12033954 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Syntaxis Web Agency</title>
+    <title>Web Agency</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -132,7 +132,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         </div>
       </header>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1128486280642c8621cf5e57_03871347', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1059914784642d6e2ac19915_90129364', "content");
 ?>
 
       <!-- Footer-->
@@ -198,12 +198,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1128486280642c8621
 </html>
 <?php }
 /* {block "content"} */
-class Block_1128486280642c8621cf5e57_03871347 extends Smarty_Internal_Block
+class Block_1059914784642d6e2ac19915_90129364 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_1128486280642c8621cf5e57_03871347',
+    0 => 'Block_1059914784642d6e2ac19915_90129364',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
